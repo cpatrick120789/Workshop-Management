@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1563bed9100d4e2b94fe9e58e8c4d3fc" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="workshopModel.Client" Width="1.5" PointX="5.625" PointY="1" />
+        <EntityTypeShape EntityType="workshopModel.Service" Width="1.5" PointX="0.75" PointY="2.125" />
+        <EntityTypeShape EntityType="workshopModel.User" Width="1.5" PointX="11.875" PointY="0.875" />
+        <AssociationConnector Association="workshopModel.FK_Client_0_0" />
+        <EntityTypeShape EntityType="workshopModel.Order" Width="1.5" PointX="9" PointY="1" />
+        <AssociationConnector Association="workshopModel.FK_Order_0_0" />
+        <EntityTypeShape EntityType="workshopModel.Mechanic" Width="1.5" PointX="12.125" PointY="4" />
+        <EntityTypeShape EntityType="workshopModel.MechanicOrder" Width="1.5" PointX="10.5" PointY="8.125" />
+        <AssociationConnector Association="workshopModel.FK_MechanicOrder_0_0" />
+        <AssociationConnector Association="workshopModel.FK_MechanicOrder_0_01" />
+        <EntityTypeShape EntityType="workshopModel.Accessory" Width="1.5" PointX="3.375" PointY="8.125" />
+        <EntityTypeShape EntityType="workshopModel.Provider" Width="1.5" PointX="8.25" PointY="9.875" />
+        <EntityTypeShape EntityType="workshopModel.ProviderAccessory" Width="1.5" PointX="6.5" PointY="6.25" />
+        <AssociationConnector Association="workshopModel.FK_ProviderAccessory_0_0" />
+        <AssociationConnector Association="workshopModel.FK_ProviderAccessory_0_01" />
+        <EntityTypeShape EntityType="workshopModel.RepairAccessory" Width="1.5" PointX="5.625" PointY="9.75" />
+        <AssociationConnector Association="workshopModel.FK_RepairAccessory_0_0" />
+        <EntityTypeShape EntityType="workshopModel.Repair" Width="1.5" PointX="0.75" PointY="11.625" />
+        <AssociationConnector Association="workshopModel.FK_Repair_0_0" />
+        <AssociationConnector Association="workshopModel.FK_RepairAccessory_1_0" />
+        <AssociationConnector Association="workshopModel.MechanicService" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

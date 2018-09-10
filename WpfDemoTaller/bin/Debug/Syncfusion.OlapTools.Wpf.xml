@@ -1,0 +1,1228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.OlapTools.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Tools.Olap.HierarchySelector">
+            <summary>
+            Interaction logic for AttributeSelector.xaml
+            </summary>
+            <summary>
+            HierarchySelector
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.HierarchySelector.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.CalcMemberEditor">
+            <summary>
+            Interaction logic for CalcMemberEditor.xaml
+            </summary>
+            <summary>
+            CalcMemberEditor
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CalcMemberEditor.#ctor(Syncfusion.Olap.Manager.OlapDataManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.CalcMemberEditor"/> class.
+            </summary>
+            <param name="dataManager">The data manager.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CalcMemberEditor.#ctor(Syncfusion.Windows.Tools.Olap.SplitButton)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.CalcMemberEditor"/> class.
+            </summary>
+            <param name="host">The host as <see cref="T:Syncfusion.Windows.Tools.Olap.SplitButton"/>.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CalcMemberEditor.OKButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the OK Button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CalcMemberEditor.CancelButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the Cancel Button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CalcMemberEditor.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder">
+            <summary>
+            Interaction logic for AxisElementBuilder.xaml
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NotifySplitButtonDropped(System.String,System.String,System.String,Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Raises when SplitButton is dropped between AxisElementBuilder.                             
+            </summary>
+            <param name="source">AxisElementbuilder</param>
+            <param name="faxis">SplitButton dragged from[Categorical/Series/Slicer]</param>
+            <param name="taxis">SplitButton dropped to[Categorical/Series/Slicer]</param>
+            <param name="node">Dragged Node</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NotifyTreeNodeDropped(System.String,System.String,System.String,Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Raises when node is dragged and dropped from CubeDimensionBrowser to AxisElementBuilder.
+            </summary>
+            <param name="source">CubeDimensionBrowser</param>
+            <param name="faxis">SplitButton dragged from[Categorical/Series/Slicer]</param>
+            <param name="taxis">SplitButton dropped to[Categorical/Series/Slicer]</param>
+            <param name="node">Dragged Node</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NotifyEditorOpening(System.String,Syncfusion.Olap.Data.MetaTreeNode,Syncfusion.Olap.Data.MetaTreeNodeType)">
+            <summary>
+            Raises while opening Measure/Member Editor.
+            </summary>
+            <param name="axis">SplitButton Axis[Categorical/Series/Slicer]</param>
+            <param name="node">Current Node</param>
+            <param name="nodetype">Current Node Type</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NotifySplitButtonOrderChanging(Syncfusion.Windows.Tools.Olap.AxisElementBuilder.Direction,Syncfusion.Olap.Data.MetaTreeNode,System.Int32,System.Int32)">
+            <summary>
+            Raises when SplitButton order is changing in AxisElementBuilder.
+            </summary>
+            <param name="control">Order[up/down/delete]</param>
+            <param name="node">Order Changing Node</param>
+            <param name="oldpos">Old Position</param>
+            <param name="newpos">New Position</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NotifyEditorClosed(System.String,Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Raises when Measure/Member Editor is closed.
+            </summary>
+            <param name="axis">SplitButton Axis[Categorical/Series/Slicer]</param>
+            <param name="node">Current Node</param>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.AxisElementBuilderStyleProperty">
+            <summary>
+            Gets or sets the AxisElementBuilderStyle.
+            </summary>
+            <value>The AxisElementBuilderStyle.</value>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.UpdateExcludeNodes(Syncfusion.Olap.Reports.LevelElement,Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Unselects the nodes to the supplies MetaTreeNode base on the level element supplied
+            </summary>
+            <param name="excludedLevelElement">Excluding level element</param>
+            <param name="metaTreeNodeMembers">MetaTreeNode set</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.RemoveIfSameDimensionElementExist(Syncfusion.Olap.Reports.Items,Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Removing item in the items collection, if the same element exis in the 
+            dragged node
+            </summary>
+            <param name="items">Items collection</param>
+            <param name="draggedNode">Dragged node</param>
+            <returns>Removed item</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.GetMeasureNode(Syncfusion.Olap.Data.MetaTreeNode,Syncfusion.Olap.Reports.MeasureElement,System.Boolean)">
+            <summary>
+            Searching for the measure node from the MeasureNodes collection based on the 
+            measure element supplied
+            </summary>
+            <param name="metaTreeNodeMeasuresSource">MeasureNodes collection</param>
+            <param name="measureElement">measure element</param>
+            <returns>Found measure node</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.RefreshOlapDataManagerElementItems(Syncfusion.Windows.Tools.Olap.AxisElementBuilder)">
+            <summary>
+            Refreshes the OlapDataManager with the latest available items
+            </summary>
+            <param name="axisElementBuiler">source axis builder</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.RefreshOlapDataManagerElementItems(Syncfusion.Windows.Tools.Olap.AxisElementBuilder,System.Boolean,Syncfusion.Olap.Data.AxisType)">
+            <summary>
+            Refreshes the OlapDataManager with the latest available items
+            </summary>
+            <param name="axisElementBuiler">source axis builder</param>"
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OnSplitButtonDropped">
+            <summary>
+            Occurs when SplitButton is dropped between AxisElementBuilder.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OnTreeNodeDropped">
+            <summary>
+             Occurs when node is dragged and dropped from CubeDimensionBrowser to AxisElementBuilder.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OnEditorOpening">
+            <summary>
+            Occurs while opening Measure/Member Editor.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OnSplitButtonOrderChanging">
+            <summary>
+            Occurs when SplitButton order is changing in AxisElementBuilder.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OnEditorClosed">
+            <summary>
+            Occurs when Measure/Member Editor is closed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.Axis">
+            <summary>
+            Gets or sets AxisElementBuilder axis.
+            </summary>
+            <value>The axis.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.CurrentTheme">
+            <summary>
+            Gets or sets the current theme.
+            </summary>
+            <value>The current theme.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.AutoExecute">
+            <summary>
+            Gets or sets whether the elements will automatically execute the query.
+            </summary>
+            <value><c>true</c> if [auto execute]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.GetElementItems">
+            <summary>
+            Gets the Selected element form the metatreenode.
+            </summary>
+            <value>The get element items.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.MetaTreeNodes">
+            <summary>
+            Gets or sets the AxisElementBuilder elements MetaTreeNodesq
+            </summary>
+            <value>The meta tree nodes.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OlapDataManager">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.SplitButtonDroppedHandler">
+            <summary>
+            Occurs when SplitButton is dropped between AxisElementBuilder.
+            </summary>
+            <param name="sender">AxisElementBuilder</param>
+            <param name="e">Source, FromAxis, ToAxis and MetaTreeNode</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.TreeNodeDroppedHandler">
+            <summary>
+            Occurs when node is dragged and dropped from CubeDimensionBrowser to AxisElementBuilder.
+            </summary>
+            <param name="sender">AxisElementBuilder</param>
+            <param name="e">Source,FromAxis,ToAxis and MetaTreeNode</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorOpeningHandler">
+            <summary>
+            Occurs while opening Measure/Member Editor.
+            </summary>
+            <param name="sender">AxisElementBuilder</param>
+            <param name="e">Axis, MetaTreeNode and MetaTreeNodeType</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.SplitButtonOrderChangingHandler">
+            <summary>
+            Occurs when SplitButton order is changing in AxisElementBuilder.
+            </summary>
+            <param name="sender">AxisElementBuilder</param>
+            <param name="e">Direction, MetaTreeNode, OldPosition and NewPosition</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorClosedHandler">
+            <summary>
+            Occurs when Measure/Member Editor is closed.
+            </summary>
+            <param name="sender">AxisElementBuilder</param>
+            <param name="e">Axis and MetaTreeNode</param>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.Direction">
+            <summary>
+            Enumeration to notify the direction while SplitButton order changes in AxisElementBuilder.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OrderChangingEventArgs">
+            <summary>
+            Event argument shown when SplitButton order is changing in AxisElementBuilder.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OrderChangingEventArgs.Direction">
+            <summary>
+            Gets the order of SplitButton.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OrderChangingEventArgs.Node">
+            <summary>
+            Gets or sets the MetaTreeNode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OrderChangingEventArgs.OldPosition">
+            <summary>
+            Gets the old index position of SplitButton.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.OrderChangingEventArgs.NewPosition">
+            <summary>
+            Gets the new index position of SplitButton.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NodeDroppedEventArgs">
+            <summary>
+            Event argument shown when dropped node in AxisElementBuilder.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NodeDroppedEventArgs.Source">
+            <summary>
+            Gets or sets the SplitButton source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NodeDroppedEventArgs.FromAxis">
+            <summary>
+            Gets the axis name from where the SplitButton was dragged.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NodeDroppedEventArgs.ToAxis">
+            <summary>
+            Gets the axis name where the SplitButton was dropped.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.NodeDroppedEventArgs.DraggedNode">
+            <summary>
+            Gets or sets the MetaTreeNode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorOpeningEventArgs">
+            <summary>
+            Event argument shown while opening Measure/Member Editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorOpeningEventArgs.Axis">
+            <summary>
+             Gets the axis name where SplitButton is present.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorOpeningEventArgs.Node">
+            <summary>
+            Gets or sets the MetaTreeNode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorOpeningEventArgs.NodeType">
+            <summary>
+            Gets the MetaTreeNodeType.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorClosedEventArgs">
+            <summary>
+            Event argument shown when Measure/Member Editor is closed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorClosedEventArgs.Axis">
+            <summary>
+            Gets the axis name where SplitButton is present.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.AxisElementBuilder.EditorClosedEventArgs.Node">
+            <summary>
+            Gets or sets the MetaTreeNode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.MeasureEditor">
+            <summary>
+            Interaction logic for MeasureEditor.xaml
+            </summary>
+            <summary>
+            MeasureEditor
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MeasureEditor.#ctor(Syncfusion.Windows.Tools.Olap.SplitButton,System.Collections.ObjectModel.ObservableCollection{Syncfusion.Olap.Data.MetaTreeNode})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.MeasureEditor"/> class.
+            </summary>
+            <param name="host">The host.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MeasureEditor.btnPopupCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnPopupCancel control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MeasureEditor.btnPopupClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnPopupClose control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MeasureEditor.btnPopupOK_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnPopupOK control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MeasureEditor.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.MeasureEditor.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+            <value>The host.</value>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.MemberEditor">
+            <summary>
+            Interaction logic for MemberEditor.xaml
+            </summary>
+            <summary>
+            MemberEditor
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.MemberEditor.PopupTittleProperty">
+            <summary>
+            Popup Title Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MemberEditor.#ctor(Syncfusion.Windows.Tools.Olap.SplitButton,System.Collections.ObjectModel.ObservableCollection{Syncfusion.Olap.Data.MetaTreeNode})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.MemberEditor"/> class.
+            </summary>
+            <param name="host">The host.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MemberEditor.btnPopupCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnPopupCancel control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MemberEditor.btnPopupClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnPopupClose control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MemberEditor.btnPopupOK_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnPopupOK control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MemberEditor.MemberEditor_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Loaded event of the MemberEditor control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.MemberEditor.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.MemberEditor.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+            <value>The host.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.MemberEditor.PopupTitle">
+            <summary>
+            Gets or sets the popup title.
+            </summary>
+            <value>The popup title.</value>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.KPIEditor">
+            <summary>
+            Interaction logic for KPIEditor.xaml
+            </summary>
+            <summary>
+            KPIEditor
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.KPIEditor.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.WaitingDialog">
+            <summary>
+            Interaction logic for WaitingDialog.xaml
+            </summary>
+            <summary>
+            WaitingDialog
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.WaitingDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.WaitingDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.WaitingDialog.CloseWindow">
+            <summary>
+            Closes the window.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.WaitingDialog.Display">
+            <summary>
+            Displays this instance.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.WaitingDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.SplitButton">
+            <summary>
+            Interaction logic for SplitButton.xaml
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.SplitButton.HostProperty">
+            <summary>
+            Host Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.SplitButton.MetaTreeNodeProperty">
+            <summary>
+            MetaTreeNode Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.SplitButton.TextProperty">
+            <summary>
+            Text Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.SplitButton.button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the Button control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.SplitButton.TextChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Texts the changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="e">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.SplitButton.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+            <value>The host.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.SplitButton.MetaTreeNode">
+            <summary>
+            Gets or sets the meta tree node.
+            </summary>
+            <value>The meta tree node.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.SplitButton.OlapDataManager">
+            <summary>
+            Gets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.SplitButton.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+            <value>The text.</value>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.ImageConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.ImageConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.WidthHeightConvertor">
+            <summary>
+            Converting the Width and Height of MetaTreeNode Elements
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.WidthHeightConvertor.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.WidthHeightConvertor.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.IntBoolConvertor">
+            <summary>
+            Converting the Visibility to Boolean value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.IntBoolConvertor.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.IntBoolConvertor.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.NodeTypeVisibilityConvertor">
+            <summary>
+            Converting the Boolean to Integer Value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.NodeTypeVisibilityConvertor.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.NodeTypeVisibilityConvertor.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.NamedSetVisibilityConvertor">
+            <summary>
+            Converting the NodeType of namedset to Collapsible
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.NamedSetVisibilityConvertor.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.NamedSetVisibilityConvertor.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser">
+            <summary>
+            Lists the Meta Data of the Selected Cube
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.AllowNodeDraggingProperty">
+            <summary>
+            AllowNodeDragging Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.IncludeMembersProperty">
+            <summary>
+            IncludeMembers Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OlapDataManagerProperty">
+            <summary>
+            OlapDataManager Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.NotifyOnTreeNodeExpanded(Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Raises when the node is expanded in CubeDimensionBrowser
+            </summary>
+            <param name="node">MetaTreeNode</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.NotifyOnTreeNodeCollapsed(Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Raises when the node is collapsed in CubeDimensionBrowser
+            </summary>
+            <param name="node">MetaTreeNode</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.NotifyOnTreeNodeDragged(Syncfusion.Olap.Data.MetaTreeNode)">
+            <summary>
+            Raises when the node is dragged from CubeDimensionBrowser
+            </summary>
+            <param name="node">MetaTreeNode</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.#cctor">
+            <summary>
+            Initializes the <see cref="T:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.#ctor">
+            <summary>
+             Initializes the <see cref="T:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.MeasureGroupNameCaptionProperty">
+            <summary>
+            Declaring dependency property to get the measure group caption
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.item_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Right Click event when Context menu is been called.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="!:System.Windows.Input.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OlapDataManagerChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Cubes the model changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="e">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.MetatTreeChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Cubes the model changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="e">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.RefreshNodes">
+            <summary>
+            Refreshes the nodes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OnTreeNodeExpanded">
+            <summary>
+            Occurs when the node is expanded in CubeDimensionBrowser
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OnTreeNodeCollapsed">
+            <summary>
+            Occurs when the node is collapsed in CubeDimensionBrowser
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OnTreeNodeDragged">
+            <summary>
+            Occurs when the node is dragged from CubeDimensionBrowser
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.AllowNodeDragging">
+            <summary>
+            Gets or sets a value indicating whether [allow node dragging].
+            </summary>
+            <value><c>true</c> if [allow node dragging]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.CubeName">
+            <summary>
+            Gets or sets the name of the cube.
+            </summary>
+            <value>The name of the cube.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.IncludeMembers">
+            <summary>
+            Gets or sets a value indicating whether [include members].
+            </summary>
+            <value><c>true</c> if [include members]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OlapDataManager">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.MeasureSortOrderInCubeBrowser">
+            <summary>
+            Gets or sets value for enabling sorting Measures in CubeDimensionBrowser
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.MeasureGroupNameCaption">
+            <summary>
+            Gets or sets the measure group caption
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.DisplayMode">
+            <summary>
+            Gets or sets value for a display mode. By default entire schema will be loaded.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.CubeDimensionBrowser.OnTreeNodeEventHandler">
+            <summary>
+            Event handler for node expand, collapse and drag operation in CubeDimensionBrowser
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.CubeBrowserDisplayMode">
+            <summary>
+            Enu
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.OnTreeNodeEventArgs">
+            <summary>
+            Event argument for node expand, collapse and drag operation in CubeDimensionBrowser
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.OnTreeNodeEventArgs.Node">
+            <summary>
+            Gets or sets the MetaTreeNode
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.CubeSelector">
+            <summary>
+            CubeSelector lists the available type in the Selected Analysis srevice database
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Olap.CubeSelector.OlapDataManagerProperty">
+            <summary>
+            OlapDataManager Dependency Property Implementation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeSelector.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.CubeSelector"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeSelector.BindData(Syncfusion.Olap.Data.CubeInfoCollection)">
+            <summary>
+            Binds the data.
+            </summary>
+            <param name="cubes">The cubes.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeSelector.CubeSelector_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Handles the SelectionChanged event of the CubeSelector control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.CubeSelector.OlapDataManagerChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Cubes the model changed.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="e">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeSelector.CubeName">
+            <summary>
+            Gets the name of the cube.
+            </summary>
+            <value>The name of the cube.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.CubeSelector.OlapDataManager">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.ReportList">
+            <summary>
+            Lists the available reports in the report definition file
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.ReportList.#cctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.ReportList"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Olap.ReportList.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Tools.Olap.ReportList"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.ReportList.Reports">
+            <summary>
+            Gets or sets the reports.
+            </summary>
+            <value>The reports.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsMeasureEditorTitle">
+            <summary>
+            Gets or sets the text for the measure editor title.
+            </summary>
+            <value>The olap tools measure editor title.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsMeasureEditorRemoveContextMenu">
+            <summary>
+            Gets or sets the text for the measure editor remove context menu option.
+            </summary>
+            <value>The olap tools measure editor remove context menu.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsEditorOk">
+            <summary>
+            Gets or sets the text for the tools editor ok option.
+            </summary>
+            <value>The olap tools editor ok.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsEditorCancel">
+            <summary>
+            Gets or sets text for the tools editor cancel option.
+            </summary>
+            <value>The olap tools editor cancel.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapMeasureEditorCheckOrUncheckAll">
+            <summary>
+            Gets or sets text for the measure editor check or uncheck all option.
+            </summary>
+            <value>The olap measure editor check or uncheck all.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsEditorDelete">
+            <summary>
+            Gets or sets the text for tools editor delete option.
+            </summary>
+            <value>The olap tools editor delete.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsEditorMoveUp">
+            <summary>
+            Gets or sets the text for tools editor move up option.
+            </summary>
+            <value>The olap tools editor move up.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.MeasureEditorResourceWrapper.OlapToolsEditorMoveDown">
+            <summary>
+            Gets or sets the text for tools editor move down option.
+            </summary>
+            <value>The olap tools editor move down.</value>
+        </member>
+        <member name="T:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.CubeDimensionBrowser_RightClick_Edit">
+            <summary>
+              Looks up a localized string similar to Edit.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.CubeDimensionBrowser_RightClick_Remove">
+            <summary>
+              Looks up a localized string similar to Remove.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapClient_Loading_Indicator_Text">
+            <summary>
+              Looks up a localized string similar to Loading....
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_CalcMemberEditor_Caption">
+            <summary>
+              Looks up a localized string similar to Caption:.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_CalcMemberEditor_Expression">
+            <summary>
+              Looks up a localized string similar to Expression:.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_CalcMemberEditor_Format">
+            <summary>
+              Looks up a localized string similar to Format string:.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_CalcMemberEditor_Title">
+            <summary>
+              Looks up a localized string similar to Calculated Member Editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_CalcMemberEditor_Type">
+            <summary>
+              Looks up a localized string similar to Member Type:.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_Cancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_Delete">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_MoveDown">
+            <summary>
+              Looks up a localized string similar to Move Down.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_MoveUp">
+            <summary>
+              Looks up a localized string similar to Move Up.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_Ok">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_SplitButton_Delete_ToolTip">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_SplitButton_MoveDown_ToolTip">
+            <summary>
+              Looks up a localized string similar to Move Down.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_Editor_SplitButton_MoveUp_ToolTip">
+            <summary>
+              Looks up a localized string similar to Move Up.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_HierarchySelector_Cancel_Button">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_HierarchySelector_Ok_Button">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_HierarchySelector_Skip_Button">
+            <summary>
+              Looks up a localized string similar to Skip.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_HierarchySelector_TextBoxTitle">
+            <summary>
+              Looks up a localized string similar to Select Hierarchy.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_HierarchySelector_Title">
+            <summary>
+              Looks up a localized string similar to Hierarchy Selector.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_CancelButton">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_Goal">
+            <summary>
+              Looks up a localized string similar to Goal.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_GoalExpression">
+            <summary>
+              Looks up a localized string similar to Goal Expression.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_name">
+            <summary>
+              Looks up a localized string similar to KPI Name :.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_OkButton">
+            <summary>
+              Looks up a localized string similar to Ok.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_Shapes">
+            <summary>
+              Looks up a localized string similar to Shapes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_StandardArrow">
+            <summary>
+              Looks up a localized string similar to Standard Arrow.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_Status">
+            <summary>
+              Looks up a localized string similar to Status.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_StatusExpression">
+            <summary>
+              Looks up a localized string similar to Status Expression.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_StatusIndicator">
+            <summary>
+              Looks up a localized string similar to Status Indicator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_title">
+            <summary>
+              Looks up a localized string similar to KPI Editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_TrafficLight">
+            <summary>
+              Looks up a localized string similar to Traffic Light.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_Trend">
+            <summary>
+              Looks up a localized string similar to Trend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_TrendExpression">
+            <summary>
+              Looks up a localized string similar to Trend Expression.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_TrendIndicator">
+            <summary>
+              Looks up a localized string similar to Trend Indicator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_Value">
+            <summary>
+              Looks up a localized string similar to Value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_KpiEditor_ValueExpression">
+            <summary>
+              Looks up a localized string similar to Value Expression.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_MeasureEditor_CheckAll_UnCheckAll">
+            <summary>
+              Looks up a localized string similar to Check/Uncheck All.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_MeasureEditor_Remove_ContextMenu">
+            <summary>
+              Looks up a localized string similar to Remove.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_MeasureEditor_Title">
+            <summary>
+              Looks up a localized string similar to Measure Editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_MemberEditor_CheckAll_UnCheckAll">
+            <summary>
+              Looks up a localized string similar to Check / UnCheck All.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_MemberEditor_Title">
+            <summary>
+              Looks up a localized string similar to Member Editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Olap.Resources.Syncfusion_OlapTools_WPF.OlapTools_SubsetFilter_DropDown_Text">
+            <summary>
+              Looks up a localized string similar to Max number of records to be displayed..
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

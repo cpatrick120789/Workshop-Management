@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="workshopModel.Store" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Accessory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Price" Type="real" Nullable="false" />
+          <Property Name="Amount" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Identification" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="varchar" MaxLength="12" />
+          <Property Name="Email" Type="varchar" MaxLength="10" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="TipoVehiculo" Type="varchar" MaxLength="100" />
+          <Property Name="Placa" Type="varchar" MaxLength="100" />
+          <Property Name="ModeloVehiculo" Type="varchar" MaxLength="100" />
+          <Property Name="ColorVehiculo" Type="varchar" MaxLength="100" />
+          <Property Name="TipoCliente" Type="integer" />
+          <Property Name="Observaciones" Type="varchar" MaxLength="1000" />
+          <Property Name="ServiceId" Type="integer" />
+        </EntityType>
+        <EntityType Name="Mechanic">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Image" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MechanicOrder">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="IdOrder" Type="integer" Nullable="false" />
+          <Property Name="IdMechanic" Type="integer" Nullable="false" />
+          <Property Name="IsPrincipal" Type="integer" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'main.MechanicService' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="MechanicService">
+          <Key>
+            <PropertyRef Name="IdService" />
+            <PropertyRef Name="IdMechanic" />
+          </Key>
+          <Property Name="IdService" Type="integer" Nullable="false" />
+          <Property Name="IdMechanic" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="IdClient" Type="integer" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="Price" Type="decimal" Precision="53" Scale="0" Nullable="false" />
+          <Property Name="Status" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Provider">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Image" Type="varchar" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProviderAccessory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="IdProvider" Type="integer" Nullable="false" />
+          <Property Name="IdAccessory" Type="integer" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Amount" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Repair">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="IdClient" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RepairAccessory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="IdRepair" Type="integer" Nullable="false" />
+          <Property Name="IdAccessory" Type="integer" Nullable="false" />
+          <Property Name="Amount" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Service">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="NormalPrice" Type="real" Nullable="false" />
+          <Property Name="PreferentialPrice" Type="real" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="2147483647" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="2147483647" Nullable="false" />
+          <Property Name="Image" Type="varchar" MaxLength="2147483647" Nullable="false" />
+          <Property Name="Rol" Type="integer" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="2147483647" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="2147483647" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Client_0_0">
+          <End Role="Service" Type="Self.Service" Multiplicity="0..1" />
+          <End Role="Client" Type="Self.Client" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Service">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Client">
+              <PropertyRef Name="ServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MechanicOrder_0_0">
+          <End Role="Mechanic" Type="Self.Mechanic" Multiplicity="1" />
+          <End Role="MechanicOrder" Type="Self.MechanicOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mechanic">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MechanicOrder">
+              <PropertyRef Name="IdMechanic" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MechanicOrder_1_0">
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+          <End Role="MechanicOrder" Type="Self.MechanicOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MechanicOrder">
+              <PropertyRef Name="IdOrder" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MechanicService_0_0">
+          <End Role="Mechanic" Type="Self.Mechanic" Multiplicity="1" />
+          <End Role="MechanicService" Type="Self.MechanicService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mechanic">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MechanicService">
+              <PropertyRef Name="IdMechanic" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MechanicService_1_0">
+          <End Role="Service" Type="Self.Service" Multiplicity="1" />
+          <End Role="MechanicService" Type="Self.MechanicService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Service">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MechanicService">
+              <PropertyRef Name="IdService" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_0_0">
+          <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProviderAccessory_0_0">
+          <End Role="Accessory" Type="Self.Accessory" Multiplicity="1" />
+          <End Role="ProviderAccessory" Type="Self.ProviderAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accessory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProviderAccessory">
+              <PropertyRef Name="IdAccessory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProviderAccessory_1_0">
+          <End Role="Provider" Type="Self.Provider" Multiplicity="1" />
+          <End Role="ProviderAccessory" Type="Self.ProviderAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Provider">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProviderAccessory">
+              <PropertyRef Name="IdProvider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Repair_0_0">
+          <End Role="Client" Type="Self.Client" Multiplicity="1" />
+          <End Role="Repair" Type="Self.Repair" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Repair">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RepairAccessory_0_0">
+          <End Role="Accessory" Type="Self.Accessory" Multiplicity="1" />
+          <End Role="RepairAccessory" Type="Self.RepairAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accessory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairAccessory">
+              <PropertyRef Name="IdAccessory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RepairAccessory_1_0">
+          <End Role="Repair" Type="Self.Repair" Multiplicity="1" />
+          <End Role="RepairAccessory" Type="Self.RepairAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Repair">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairAccessory">
+              <PropertyRef Name="IdRepair" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="workshopModelStoreContainer">
+          <EntitySet Name="Accessory" EntityType="Self.Accessory" store:Type="Tables" />
+          <EntitySet Name="Client" EntityType="Self.Client" store:Type="Tables" />
+          <EntitySet Name="Mechanic" EntityType="Self.Mechanic" store:Type="Tables" />
+          <EntitySet Name="MechanicOrder" EntityType="Self.MechanicOrder" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" store:Type="Tables" />
+          <EntitySet Name="Provider" EntityType="Self.Provider" store:Type="Tables" />
+          <EntitySet Name="ProviderAccessory" EntityType="Self.ProviderAccessory" store:Type="Tables" />
+          <EntitySet Name="Repair" EntityType="Self.Repair" store:Type="Tables" />
+          <EntitySet Name="RepairAccessory" EntityType="Self.RepairAccessory" store:Type="Tables" />
+          <EntitySet Name="Service" EntityType="Self.Service" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" store:Type="Tables" />
+          <EntitySet Name="MechanicService" EntityType="Self.MechanicService" store:Type="Tables">
+            <DefiningQuery>SELECT 
+[MechanicService].[IdService] AS [IdService], 
+[MechanicService].[IdMechanic] AS [IdMechanic]
+FROM [MechanicService] AS [MechanicService]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Client_0_0" Association="Self.FK_Client_0_0">
+            <End Role="Service" EntitySet="Service" />
+            <End Role="Client" EntitySet="Client" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MechanicOrder_0_0" Association="Self.FK_MechanicOrder_0_0">
+            <End Role="Mechanic" EntitySet="Mechanic" />
+            <End Role="MechanicOrder" EntitySet="MechanicOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MechanicOrder_1_0" Association="Self.FK_MechanicOrder_1_0">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="MechanicOrder" EntitySet="MechanicOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MechanicService_0_0" Association="Self.FK_MechanicService_0_0">
+            <End Role="Mechanic" EntitySet="Mechanic" />
+            <End Role="MechanicService" EntitySet="MechanicService" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MechanicService_1_0" Association="Self.FK_MechanicService_1_0">
+            <End Role="Service" EntitySet="Service" />
+            <End Role="MechanicService" EntitySet="MechanicService" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_0_0" Association="Self.FK_Order_0_0">
+            <End Role="Client" EntitySet="Client" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProviderAccessory_0_0" Association="Self.FK_ProviderAccessory_0_0">
+            <End Role="Accessory" EntitySet="Accessory" />
+            <End Role="ProviderAccessory" EntitySet="ProviderAccessory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProviderAccessory_1_0" Association="Self.FK_ProviderAccessory_1_0">
+            <End Role="Provider" EntitySet="Provider" />
+            <End Role="ProviderAccessory" EntitySet="ProviderAccessory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Repair_0_0" Association="Self.FK_Repair_0_0">
+            <End Role="Client" EntitySet="Client" />
+            <End Role="Repair" EntitySet="Repair" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RepairAccessory_0_0" Association="Self.FK_RepairAccessory_0_0">
+            <End Role="Accessory" EntitySet="Accessory" />
+            <End Role="RepairAccessory" EntitySet="RepairAccessory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RepairAccessory_1_0" Association="Self.FK_RepairAccessory_1_0">
+            <End Role="Repair" EntitySet="Repair" />
+            <End Role="RepairAccessory" EntitySet="RepairAccessory" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="workshopModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="workshopEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Client" EntityType="workshopModel.Client" />
+          <EntitySet Name="Service" EntityType="workshopModel.Service" />
+          <EntitySet Name="User" EntityType="workshopModel.User" />
+          <AssociationSet Name="FK_Client_0_0" Association="workshopModel.FK_Client_0_0">
+            <End Role="Service" EntitySet="Service" />
+            <End Role="Client" EntitySet="Client" />
+          </AssociationSet>
+          <EntitySet Name="Order" EntityType="workshopModel.Order" />
+          <AssociationSet Name="FK_Order_0_0" Association="workshopModel.FK_Order_0_0">
+            <End Role="Client" EntitySet="Client" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <EntitySet Name="Mechanic" EntityType="workshopModel.Mechanic" />
+          <EntitySet Name="MechanicOrder" EntityType="workshopModel.MechanicOrder" />
+          <AssociationSet Name="FK_MechanicOrder_0_0" Association="workshopModel.FK_MechanicOrder_0_0">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="MechanicOrder" EntitySet="MechanicOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MechanicOrder_0_01" Association="workshopModel.FK_MechanicOrder_0_01">
+            <End Role="Mechanic" EntitySet="Mechanic" />
+            <End Role="MechanicOrder" EntitySet="MechanicOrder" />
+          </AssociationSet>
+          <EntitySet Name="Accessory" EntityType="workshopModel.Accessory" />
+          <EntitySet Name="Provider" EntityType="workshopModel.Provider" />
+          <EntitySet Name="ProviderAccessory" EntityType="workshopModel.ProviderAccessory" />
+          <AssociationSet Name="FK_ProviderAccessory_0_0" Association="workshopModel.FK_ProviderAccessory_0_0">
+            <End Role="Provider" EntitySet="Provider" />
+            <End Role="ProviderAccessory" EntitySet="ProviderAccessory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProviderAccessory_0_01" Association="workshopModel.FK_ProviderAccessory_0_01">
+            <End Role="Accessory" EntitySet="Accessory" />
+            <End Role="ProviderAccessory" EntitySet="ProviderAccessory" />
+          </AssociationSet>
+          <EntitySet Name="RepairAccessory" EntityType="workshopModel.RepairAccessory" />
+          <AssociationSet Name="FK_RepairAccessory_0_0" Association="workshopModel.FK_RepairAccessory_0_0">
+            <End Role="Accessory" EntitySet="Accessory" />
+            <End Role="RepairAccessory" EntitySet="RepairAccessory" />
+          </AssociationSet>
+          <EntitySet Name="Repair" EntityType="workshopModel.Repair" />
+          <AssociationSet Name="FK_Repair_0_0" Association="workshopModel.FK_Repair_0_0">
+            <End Role="Client" EntitySet="Client" />
+            <End Role="Repair" EntitySet="Repair" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RepairAccessory_1_0" Association="workshopModel.FK_RepairAccessory_1_0">
+            <End Role="Repair" EntitySet="Repair" />
+            <End Role="RepairAccessory" EntitySet="RepairAccessory" />
+          </AssociationSet>
+          <AssociationSet Name="MechanicService" Association="workshopModel.MechanicService">
+            <End Role="Mechanic" EntitySet="Mechanic" />
+            <End Role="Service" EntitySet="Service" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Identification" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" />
+          <Property Name="TipoVehiculo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Placa" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ModeloVehiculo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ColorVehiculo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TipoCliente" Type="Int64" />
+          <Property Name="Observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ServiceId" Type="Int64" />
+          <NavigationProperty Name="Service" Relationship="workshopModel.FK_Client_0_0" FromRole="Client" ToRole="Service" />
+          <NavigationProperty Name="Order" Relationship="workshopModel.FK_Order_0_0" FromRole="Client" ToRole="Order" />
+          <NavigationProperty Name="Repair" Relationship="workshopModel.FK_Repair_0_0" FromRole="Client" ToRole="Repair" />
+        </EntityType>
+        <EntityType Name="Service">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Client" Relationship="workshopModel.FK_Client_0_0" FromRole="Service" ToRole="Client" />
+          <Property Name="NormalPrice" Type="Double" Nullable="false" />
+          <Property Name="PreferentialPrice" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Mechanic" Relationship="workshopModel.MechanicService" FromRole="Service" ToRole="Mechanic" />
+          </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="false" />
+          <Property Name="Rol" Type="Int64" Nullable="false" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Client_0_0">
+          <End Type="workshopModel.Service" Role="Service" Multiplicity="0..1" />
+          <End Type="workshopModel.Client" Role="Client" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Service">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Client">
+              <PropertyRef Name="ServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="IdClient" Type="Int64" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Client" Relationship="workshopModel.FK_Order_0_0" FromRole="Order" ToRole="Client" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="53" Scale="0" />
+          <Property Name="Status" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="MechanicOrder" Relationship="workshopModel.FK_MechanicOrder_0_0" FromRole="Order" ToRole="MechanicOrder" />
+          </EntityType>
+        <Association Name="FK_Order_0_0">
+          <End Type="workshopModel.Client" Role="Client" Multiplicity="0..1" />
+          <End Type="workshopModel.Order" Role="Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Mechanic">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MechanicOrder" Relationship="workshopModel.FK_MechanicOrder_0_01" FromRole="Mechanic" ToRole="MechanicOrder" />
+          <NavigationProperty Name="Service" Relationship="workshopModel.MechanicService" FromRole="Mechanic" ToRole="Service" />
+        </EntityType>
+        <EntityType Name="MechanicOrder">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="IdOrder" Type="Int64" Nullable="false" />
+          <Property Name="IdMechanic" Type="Int64" Nullable="false" />
+          <Property Name="IsPrincipal" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="workshopModel.FK_MechanicOrder_0_0" FromRole="MechanicOrder" ToRole="Order" />
+          <NavigationProperty Name="Mechanic" Relationship="workshopModel.FK_MechanicOrder_0_01" FromRole="MechanicOrder" ToRole="Mechanic" />
+          </EntityType>
+        <Association Name="FK_MechanicOrder_0_0">
+          <End Type="workshopModel.Order" Role="Order" Multiplicity="1" />
+          <End Type="workshopModel.MechanicOrder" Role="MechanicOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MechanicOrder">
+              <PropertyRef Name="IdOrder" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MechanicOrder_0_01">
+          <End Type="workshopModel.Mechanic" Role="Mechanic" Multiplicity="1" />
+          <End Type="workshopModel.MechanicOrder" Role="MechanicOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mechanic">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MechanicOrder">
+              <PropertyRef Name="IdMechanic" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Accessory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Amount" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="ProviderAccessory" Relationship="workshopModel.FK_ProviderAccessory_0_01" FromRole="Accessory" ToRole="ProviderAccessory" />
+          <NavigationProperty Name="RepairAccessory" Relationship="workshopModel.FK_RepairAccessory_0_0" FromRole="Accessory" ToRole="RepairAccessory" />
+        </EntityType>
+        <EntityType Name="Provider">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ProviderAccessory" Relationship="workshopModel.FK_ProviderAccessory_0_0" FromRole="Provider" ToRole="ProviderAccessory" />
+        </EntityType>
+        <EntityType Name="ProviderAccessory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="IdProvider" Type="Int64" Nullable="false" />
+          <Property Name="IdAccessory" Type="Int64" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="Amount" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Provider" Relationship="workshopModel.FK_ProviderAccessory_0_0" FromRole="ProviderAccessory" ToRole="Provider" />
+          <NavigationProperty Name="Accessory" Relationship="workshopModel.FK_ProviderAccessory_0_01" FromRole="ProviderAccessory" ToRole="Accessory" />
+        </EntityType>
+        <Association Name="FK_ProviderAccessory_0_0">
+          <End Type="workshopModel.Provider" Role="Provider" Multiplicity="1" />
+          <End Type="workshopModel.ProviderAccessory" Role="ProviderAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Provider">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProviderAccessory">
+              <PropertyRef Name="IdProvider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProviderAccessory_0_01">
+          <End Type="workshopModel.Accessory" Role="Accessory" Multiplicity="1" />
+          <End Type="workshopModel.ProviderAccessory" Role="ProviderAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accessory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProviderAccessory">
+              <PropertyRef Name="IdAccessory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="RepairAccessory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="IdRepair" Type="Int64" Nullable="false" />
+          <Property Name="IdAccessory" Type="Int64" Nullable="false" />
+          <Property Name="Amount" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Accessory" Relationship="workshopModel.FK_RepairAccessory_0_0" FromRole="RepairAccessory" ToRole="Accessory" />
+          <NavigationProperty Name="Repair" Relationship="workshopModel.FK_RepairAccessory_1_0" FromRole="RepairAccessory" ToRole="Repair" />
+        </EntityType>
+        <Association Name="FK_RepairAccessory_0_0">
+          <End Type="workshopModel.Accessory" Role="Accessory" Multiplicity="1" />
+          <End Type="workshopModel.RepairAccessory" Role="RepairAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accessory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairAccessory">
+              <PropertyRef Name="IdAccessory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Repair">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="IdClient" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Client" Relationship="workshopModel.FK_Repair_0_0" FromRole="Repair" ToRole="Client" />
+          <NavigationProperty Name="RepairAccessory" Relationship="workshopModel.FK_RepairAccessory_1_0" FromRole="Repair" ToRole="RepairAccessory" />
+        </EntityType>
+        <Association Name="FK_Repair_0_0">
+          <End Type="workshopModel.Client" Role="Client" Multiplicity="1" />
+          <End Type="workshopModel.Repair" Role="Repair" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Repair">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RepairAccessory_1_0">
+          <End Type="workshopModel.Repair" Role="Repair" Multiplicity="1" />
+          <End Type="workshopModel.RepairAccessory" Role="RepairAccessory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Repair">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairAccessory">
+              <PropertyRef Name="IdRepair" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MechanicService">
+          <End Type="workshopModel.Mechanic" Role="Mechanic" Multiplicity="*" />
+          <End Type="workshopModel.Service" Role="Service" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="workshopModelStoreContainer" CdmEntityContainer="workshopEntities">
+          <EntitySetMapping Name="Client">
+            <EntityTypeMapping TypeName="workshopModel.Client">
+              <MappingFragment StoreEntitySet="Client">
+                <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="TipoCliente" ColumnName="TipoCliente" />
+                <ScalarProperty Name="ColorVehiculo" ColumnName="ColorVehiculo" />
+                <ScalarProperty Name="ModeloVehiculo" ColumnName="ModeloVehiculo" />
+                <ScalarProperty Name="Placa" ColumnName="Placa" />
+                <ScalarProperty Name="TipoVehiculo" ColumnName="TipoVehiculo" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Identification" ColumnName="Identification" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Service">
+            <EntityTypeMapping TypeName="workshopModel.Service">
+              <MappingFragment StoreEntitySet="Service">
+                <ScalarProperty Name="PreferentialPrice" ColumnName="PreferentialPrice" />
+                <ScalarProperty Name="NormalPrice" ColumnName="NormalPrice" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="workshopModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Order">
+            <EntityTypeMapping TypeName="workshopModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mechanic">
+            <EntityTypeMapping TypeName="workshopModel.Mechanic">
+              <MappingFragment StoreEntitySet="Mechanic">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MechanicOrder">
+            <EntityTypeMapping TypeName="workshopModel.MechanicOrder">
+              <MappingFragment StoreEntitySet="MechanicOrder">
+                <ScalarProperty Name="IsPrincipal" ColumnName="IsPrincipal" />
+                <ScalarProperty Name="IdMechanic" ColumnName="IdMechanic" />
+                <ScalarProperty Name="IdOrder" ColumnName="IdOrder" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Accessory">
+            <EntityTypeMapping TypeName="workshopModel.Accessory">
+              <MappingFragment StoreEntitySet="Accessory">
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Provider">
+            <EntityTypeMapping TypeName="workshopModel.Provider">
+              <MappingFragment StoreEntitySet="Provider">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProviderAccessory">
+            <EntityTypeMapping TypeName="workshopModel.ProviderAccessory">
+              <MappingFragment StoreEntitySet="ProviderAccessory">
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="IdAccessory" ColumnName="IdAccessory" />
+                <ScalarProperty Name="IdProvider" ColumnName="IdProvider" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RepairAccessory">
+            <EntityTypeMapping TypeName="workshopModel.RepairAccessory">
+              <MappingFragment StoreEntitySet="RepairAccessory">
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="IdAccessory" ColumnName="IdAccessory" />
+                <ScalarProperty Name="IdRepair" ColumnName="IdRepair" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Repair">
+            <EntityTypeMapping TypeName="workshopModel.Repair">
+              <MappingFragment StoreEntitySet="Repair">
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="MechanicService" TypeName="workshopModel.MechanicService" StoreEntitySet="MechanicService">
+            <EndProperty Name="Service">
+              <ScalarProperty Name="Id" ColumnName="IdService" />
+            </EndProperty>
+            <EndProperty Name="Mechanic">
+              <ScalarProperty Name="Id" ColumnName="IdMechanic" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

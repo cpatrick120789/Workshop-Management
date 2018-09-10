@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="workshopModelStoreContainer" CdmEntityContainer="workshopEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="workshopModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="TipoCliente" ColumnName="TipoCliente" />
+          <ScalarProperty Name="ColorVehiculo" ColumnName="ColorVehiculo" />
+          <ScalarProperty Name="ModeloVehiculo" ColumnName="ModeloVehiculo" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="TipoVehiculo" ColumnName="TipoVehiculo" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Service">
+      <EntityTypeMapping TypeName="workshopModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="PreferentialPrice" ColumnName="PreferentialPrice" />
+          <ScalarProperty Name="NormalPrice" ColumnName="NormalPrice" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="workshopModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="workshopModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mechanic">
+      <EntityTypeMapping TypeName="workshopModel.Mechanic">
+        <MappingFragment StoreEntitySet="Mechanic">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MechanicOrder">
+      <EntityTypeMapping TypeName="workshopModel.MechanicOrder">
+        <MappingFragment StoreEntitySet="MechanicOrder">
+          <ScalarProperty Name="IsPrincipal" ColumnName="IsPrincipal" />
+          <ScalarProperty Name="IdMechanic" ColumnName="IdMechanic" />
+          <ScalarProperty Name="IdOrder" ColumnName="IdOrder" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accessory">
+      <EntityTypeMapping TypeName="workshopModel.Accessory">
+        <MappingFragment StoreEntitySet="Accessory">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provider">
+      <EntityTypeMapping TypeName="workshopModel.Provider">
+        <MappingFragment StoreEntitySet="Provider">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProviderAccessory">
+      <EntityTypeMapping TypeName="workshopModel.ProviderAccessory">
+        <MappingFragment StoreEntitySet="ProviderAccessory">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IdAccessory" ColumnName="IdAccessory" />
+          <ScalarProperty Name="IdProvider" ColumnName="IdProvider" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RepairAccessory">
+      <EntityTypeMapping TypeName="workshopModel.RepairAccessory">
+        <MappingFragment StoreEntitySet="RepairAccessory">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IdAccessory" ColumnName="IdAccessory" />
+          <ScalarProperty Name="IdRepair" ColumnName="IdRepair" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Repair">
+      <EntityTypeMapping TypeName="workshopModel.Repair">
+        <MappingFragment StoreEntitySet="Repair">
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MechanicService" TypeName="workshopModel.MechanicService" StoreEntitySet="MechanicService">
+      <EndProperty Name="Service">
+        <ScalarProperty Name="Id" ColumnName="IdService" />
+      </EndProperty>
+      <EndProperty Name="Mechanic">
+        <ScalarProperty Name="Id" ColumnName="IdMechanic" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

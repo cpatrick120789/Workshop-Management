@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Name="AddProviderWin" x:Class="WpfDemoTaller.AddProviderWindow"
+        Title="AddProviderWindow" Height="320.8" Width="256.6" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" SizeToContent="Width" BorderThickness="2" BorderBrush="#FFDADADA">
+    <Grid Margin="0,0,0,-0.2" HorizontalAlignment="Left" Width="257">
+        <TextBlock x:Name="LblProveedor" HorizontalAlignment="Left" Margin="13,40,0,0" TextWrapping="Wrap" Text="Proveedor" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="LblCantidad" HorizontalAlignment="Left" Margin="13,110,0,0" TextWrapping="Wrap" Text="Cantidad" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TBoxCantidad" HorizontalAlignment="Left" Height="25" Margin="13,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <DatePicker x:Name="DTimePicker" HorizontalAlignment="Left" Margin="13,208,0,0" VerticalAlignment="Top" Width="230" Height="27"/>
+        <TextBlock x:Name="LblCantidad_Copy" HorizontalAlignment="Left" Margin="13,180,0,0" TextWrapping="Wrap" Text="Fecha" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="BtnAdd" Content="Agregar" HorizontalAlignment="Left" Margin="38,257,0,0" VerticalAlignment="Top" Width="104" Height="34" Background="#FFB3E142" Foreground="White" BorderBrush="#FFB3E142" Click="BtnAdd_Click"/>
+        <Button x:Name="BtnRemove" Content="Cancelar" HorizontalAlignment="Left" Margin="147,257,0,0" VerticalAlignment="Top" Width="96" Height="34" Background="#FFED7259" BorderBrush="#FFE27474" Foreground="White" Click="BtnRemove_Click"/>
+        <syncfusion:ComboBoxAdv x:Name="CBoxCantidad" HorizontalAlignment="Left" Height="29" Margin="13,67,0,0" VerticalAlignment="Top" Width="232" AllowMultiSelect="True"/>
+
+    </Grid>
+</Window>

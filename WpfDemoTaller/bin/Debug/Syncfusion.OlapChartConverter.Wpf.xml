@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.OlapChartConverter.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Chart.Olap.Converter.OlapChartPdfExport">
+            <summary>
+            Helps to export OLAP Chart into PDF document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Chart.Olap.Converter.OlapChartPdfExport.#ctor(Syncfusion.Windows.Chart.Olap.OlapChart)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Chart.Olap.Converter.OlapChartPdfExport"/> class.
+            </summary>
+            <param name="olapChart">The olap chart.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Chart.Olap.Converter.OlapChartPdfExport.ExportIntoNewPdf(System.String)">
+            <summary>
+            Exports the into new PDF document.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Chart.Olap.Converter.OlapChartPdfExport.OlapChart">
+            <summary>
+            Gets or sets the olap chart.
+            </summary>
+            <value>The olap chart.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Chart.Olap.Converter.OlapChartPdfExport.ExportOlapChartWithZoomFactor">
+            <summary>
+            Gets or sets the zoom factor for OlapChart while exporting.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport">
+            <summary>
+            Helps to export OLAP Chart into Word document
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.Defaultmarker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.#ctor(Syncfusion.Windows.Chart.Olap.OlapChart)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport"/> class.
+            </summary>
+            <param name="olapChart">The olap chart.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.ExportintoNewDoc(System.String)">
+            <summary>
+            Export the OlapChart into the new Word document.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.ExportIntoTemplateDoc(System.String)">
+            <summary>
+            Export the OlapChart into template document.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.ExportIntoTemplateDoc(System.String,System.String)">
+            <summary>
+            Exports the into template doc.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="markerString">The marker string.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.OlapChart">
+            <summary>
+            Gets or sets the olap chart.
+            </summary>
+            <value>The olap chart.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Chart.Olap.Converter.OlapChartWordExport.ExportOlapChartWithZoomFactor">
+            <summary>
+            Gets or sets the OlapChart Export with ZoomFactor
+            </summary>
+        </member>
+    </members>
+</doc>

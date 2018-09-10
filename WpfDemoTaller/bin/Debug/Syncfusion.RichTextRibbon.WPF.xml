@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.RichTextRibbon.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Tools.Controls.HighlightColorPicker">
+            <summary>
+            Interaction logic for HighlightColorPicker.xaml
+            </summary>
+            <summary>
+            HighlightColorPicker
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Tools.Controls.HighlightColorPicker.ColorProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Controls.HighlightColorPicker.DeclareClickEvents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Tools.Controls.HighlightColorPicker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Tools.Controls.HighlightColorPicker.Color">
+            <summary>
+            Color Property of HighlightColorPicker
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Syncfusion.Windows.Tools.Controls.RichTextRibbon" -->
+        <member name="T:Syncfusion.RichTextRibbon.WPF.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.RichTextRibbon.WPF.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.RichTextRibbon.WPF.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

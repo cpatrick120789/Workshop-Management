@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfDemoTaller.ReportWindow"
+        Title="Reparaciones vs Mecánicos" Height="382.8" Width="693.4">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="147*"/>
+            <ColumnDefinition Width="146*"/>
+        </Grid.ColumnDefinitions>
+        <syncfusion:SfAreaSparkline HorizontalAlignment="Left" Height="100" Margin="104,93,0,0" VerticalAlignment="Top" Width="100"/>
+        <syncfusion:SfChart x:Name="BarCharTotalRepair" Header="Reparaciones VS Mecánicos" HorizontalAlignment="Center" Margin="10,10,10.2,9.8" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:CategoryAxis  FontSize="10" Header="Mecánicos" LabelRotationAngle="0" ShowGridLines="False"/>
+            </syncfusion:SfChart.PrimaryAxis>
+            <syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:NumericalAxis FontSize="10" Header="Refacciones" LabelRotationAngle="0"  Minimum="0"/>
+            </syncfusion:SfChart.SecondaryAxis>
+            <!--Adding Legend to the SfChart-->
+            
+            
+        </syncfusion:SfChart>
+
+    </Grid>
+</Window>

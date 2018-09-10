@@ -1,0 +1,84 @@
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Domain.dll
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Domain.pdb
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Data.dll
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Entities.dll
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Data.pdb
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Entities.pdb
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\obj\Debug\Domain.dll
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\obj\Debug\Domain.pdb
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\DataSource\workshop
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Security.dll
+C:\Users\Personel\Documents\Visual Studio 2012\Projects\Demo\Domain\bin\Debug\Security.pdb
+F:\Demo\Domain\bin\Debug\DataSource\workshop
+F:\Demo\Domain\bin\Debug\Domain.dll
+F:\Demo\Domain\bin\Debug\Domain.pdb
+F:\Demo\Domain\bin\Debug\Data.dll
+F:\Demo\Domain\bin\Debug\Entities.dll
+F:\Demo\Domain\bin\Debug\EntityFramework.dll
+F:\Demo\Domain\bin\Debug\Security.dll
+F:\Demo\Domain\bin\Debug\Data.pdb
+F:\Demo\Domain\bin\Debug\Entities.pdb
+F:\Demo\Domain\bin\Debug\Security.pdb
+F:\Demo\Domain\bin\Debug\EntityFramework.xml
+F:\Demo\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+F:\Demo\Domain\obj\Debug\Domain.dll
+F:\Demo\Domain\obj\Debug\Domain.pdb
+D:\PROJECTS\Demo\Domain\bin\Debug\DataSource\workshop
+D:\PROJECTS\Demo\Domain\bin\Debug\Domain.dll
+D:\PROJECTS\Demo\Domain\bin\Debug\Domain.pdb
+D:\PROJECTS\Demo\Domain\bin\Debug\Data.dll
+D:\PROJECTS\Demo\Domain\bin\Debug\Entities.dll
+D:\PROJECTS\Demo\Domain\bin\Debug\EntityFramework.dll
+D:\PROJECTS\Demo\Domain\bin\Debug\Security.dll
+D:\PROJECTS\Demo\Domain\bin\Debug\Data.pdb
+D:\PROJECTS\Demo\Domain\bin\Debug\Entities.pdb
+D:\PROJECTS\Demo\Domain\bin\Debug\Security.pdb
+D:\PROJECTS\Demo\Domain\bin\Debug\EntityFramework.xml
+D:\PROJECTS\Demo\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\PROJECTS\Demo\Domain\obj\Debug\Domain.dll
+D:\PROJECTS\Demo\Domain\obj\Debug\Domain.pdb
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\DataSource\workshop
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Domain.dll
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Domain.pdb
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Data.dll
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Entities.dll
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\EntityFramework.dll
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Security.dll
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Data.pdb
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Entities.pdb
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\Security.pdb
+F:\proyectos\ACTUALES\Demo\Domain\bin\Debug\EntityFramework.xml
+F:\proyectos\ACTUALES\Demo\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+F:\proyectos\ACTUALES\Demo\Domain\obj\Debug\Domain.dll
+F:\proyectos\ACTUALES\Demo\Domain\obj\Debug\Domain.pdb
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\DataSource\workshop
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Domain.dll
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Domain.pdb
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Data.dll
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Entities.dll
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\EntityFramework.dll
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Security.dll
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Data.pdb
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Entities.pdb
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Security.pdb
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\EntityFramework.xml
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\obj\Debug\Domain.dll
+D:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\obj\Debug\Domain.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\DataSource\workshop
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Domain.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Domain.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Data.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Entities.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\EntityFramework.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Security.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Data.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Entities.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\Security.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\bin\Debug\EntityFramework.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\obj\Debug\Domain.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\Domain\obj\Debug\Domain.pdb

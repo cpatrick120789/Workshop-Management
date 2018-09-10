@@ -1,0 +1,3302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfInput.Wpf</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Controls.Input.CalcConstatnts">
+            <summary>
+            Represents a constant for each function in 
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.Calculator"/> control.
+            </summary>
+            <remarks>
+            <para></para>
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CAdd">
+            <summary>
+            Sets the value for CAdd
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CMinus">
+            <summary>
+            Sets the value for CMinus
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CMultiply">
+            <summary>
+            Sets the value for CMultiply
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CDivide">
+            <summary>
+            Sets the value for CDivide
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CSquareRoot">
+            <summary>
+            Sets the value for CSquareRoot
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CReciproc">
+            <summary>
+            Sets the value for CReciproc
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CError">
+            <summary>
+            Sets the value for CError
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalcConstatnts.CInvalid">
+            <summary>
+            Sets the value for CInvalid
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.CalculatorButton">
+            <summary>
+            Represents a class for the calculator <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control buttons 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.CalculatorButton.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.CalculatorButton"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.CalculatorButton.CalculatorButton_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Hooks when calculator buttons are loaded
+            </summary>
+            <param name="sender">Calculator Button</param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorButton.BrushOpacityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for BrushOpacity.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorButton.KeyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Key.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorButton.FunctionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Function.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.CalculatorButton.BrushOpacity">
+            <summary>
+            Gets or sets the Opacity of the brush
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.CalculatorButton.Key">
+            <summary>
+            Gets or sets the Key
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.CalculatorButton.Function">
+            <summary>
+            Gets or sets the Function
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.DisplayPane">
+            <summary>
+            Represents a class for Displaying the output.
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.DisplayPane.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DisplayPane"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.DisplayPane.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the mouse focus is lost.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.DisplayPane.MemoryProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Memory.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.DisplayPane.DisplayTextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DisplayText.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.DisplayPane.ExpressionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Expression.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.DisplayPane.FindVisualParent``1(System.Windows.DependencyObject)">
+            <summary>
+            Identifies the parent of the child object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="child"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.DisplayPane.Memory">
+            <summary>
+            Gets or sets the data to be stored in the memory
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.DisplayPane.DisplayText">
+            <summary>
+            Gets or sets the data to be displayed
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.DisplayPane.Expression">
+            <summary>
+            Gets or sets the Expression
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.ExpressionList">
+            <summary>
+            Represents a class for defining the expression list
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ExpressionList.ReadyForOperand">
+            <summary>
+            When the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control is Ready to
+            get another input and has finished processing the previous input.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ExpressionList.Value">
+            <summary>
+            Gets or sets the calculated value by the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.ExpressionList.ToString">
+            <summary>
+            Converts the object into a string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.ExpressionList.Evaluate(System.Decimal,System.String)">
+            <summary>
+            Evaluates the operators.
+            </summary>
+            <param name="value"></param>
+            <param name="calcoperator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.ExpressionList.IsSpecialFunction(System.String)">
+            <summary>
+            Returns true if the function is squae root, otherwise false.
+            </summary>
+            <param name="_operator"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.FunctionsPane">
+            <summary>
+            Represents a class for Displaying the function keys.<see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.FunctionsPane"/>
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.FunctionsPane.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.FunctionsPane"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.FunctionsPane.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.FunctionsPane"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.FunctionsPane.OnCalculatorKeyDown(System.Windows.Input.Key)">
+            <summary>
+            Occurs when a calculator key is pressed.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.FunctionsPane.OnFunction(Syncfusion.Windows.Controls.Input.CalculatorFunctions)">
+            <summary>
+            Occurs when a function key is pressed.
+            </summary>
+            <param name="function"></param>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.FunctionsPane.CalculatorKeyDown">
+            <summary>
+            Invoked when a calculator key is pressed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.FunctionsPane.Function">
+            <summary>
+            Handles the events invoked due to functions
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.InputPane">
+            <summary>
+            Represents a class for Displaying the input keys.<see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.InputPane"/>
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.InputPane.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.InputPane"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.InputPane.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.InputPane"/> of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.InputPane.OnCalculatorKeyDown(System.Windows.Input.Key)">
+            <summary>
+            Occurs when the key is pressed
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.InputPane.CalculatorKeyDown">
+            <summary>
+            Invoked when the Calculator ky is pressed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfCalculator">
+            <summary>
+            Represents a control for performing calculations with decimal numbers. <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.#ctor">
+            <summary>
+            Initializes an instance for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.CultureProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Culture.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.DisplayTextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DisplayText.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.ValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.DefaultValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.MemoryProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Memory.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.ExpressionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Expression.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfCalculator.FunctionsPaneStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FunctionsPaneStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.Reset">
+            <summary>
+            Resets all the values and expression.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Occurs when the key has been pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Occurs when the key is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.CheckOperators">
+            <summary>
+            Validates the operators in the expression.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.TrailingZeros">
+            <summary>
+            Removes all the trailing zeros in the decimal value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.ValidateExpression">
+            <summary>
+            Validates the expression
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.CheckFunction(System.String)">
+            <summary>
+            Identifies the function given as input
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.Clear">
+            <summary>
+            Public method for clearing the values 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfCalculator.ClearEntry">
+            <summary>
+            public method for clear entry
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfCalculator.ErrorMessageDisplayed">
+            <summary>
+            Invoked when an error message is displayed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfCalculator.Culture">
+            <summary>
+            Gets or sets the culture format for the decimal values.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfCalculator.DisplayText">
+            <summary>
+            Gets or sets the string to be displayed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfCalculator.Value">
+            <summary>
+            Gets or sets the Value that is calculated by the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfCalculator"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfCalculator.Memory">
+            <summary>
+            Gets or sets the data to be stored in the memory.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfCalculator.Expression">
+            <summary>
+            Gets or sets the string for the expression <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Expression"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfCalculator.FunctionsPaneStyle">
+            <summary>
+            Gets or sets the style for the Function Pane <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.FunctionsPane"/>
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfCalculator.ErrorMessageEventHandler">
+            <summary>
+            Used for handling events due to error messages.
+            </summary>
+            <param name="Sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.ErrorDisplayArgs">
+            <summary>
+            Reprsents a class for the arrguments in Error Display.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.ErrorDisplayArgs.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the ErrorDisplayArgs class.
+            </summary>
+            <param name="_errorDetails"></param>
+            <param name="_newErrorMessage"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.ErrorDisplayArgs.ErrorDetails">
+            <summary>
+            Gets the Error Details
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.ErrorDisplayArgs.NewErrorMessage">
+            <summary>
+            Gets or sets the NewErrorMessage
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfDomainUpDown">
+            <summary>
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/> control is a pair
+            of spin buttons by clicking the up and down buttons the user can scroll and
+            select the data.
+            </summary>
+            <remarks>
+            DomainUpDown is a control
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.ValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.AutoReverseProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.EnableSpinAnimationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableSpinAnimation.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.SpinButtonsAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SpinButtonsAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.UpDownStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpDownStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.ItemsSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemsSource.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.ContentTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfDomainUpDown.CurrentIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CurrentIndex.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.Decrement">
+            <summary>
+            Decrements the associated performance counter by one and stores the result, as
+            an atomic operation.
+            </summary>
+            <remarks>
+            Returns void
+            </remarks>
+            <seealso cref="M:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.Increment"/>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.Increment">
+            <summary>
+            Increments the associated performance counter by one and stores the result, as
+            an atomic operation.
+            </summary>
+            <remarks>
+            Returns void
+            </remarks>
+            <seealso cref="M:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.Decrement"/>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>
+            Occurs when the pointer is moved
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.OnValueChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/> control Value has changed.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.OnItemsSourceChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/> control ItemsSource has changed.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.OnCurrentIndexChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the current index has changed
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfDomainUpDown.OnContentTemplateChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when content template is changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.InternalValue">
+            <summary>
+            Gets or sets the InternalValue
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.Value">
+            <summary>
+            Gets or sets the current value for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/>.
+            </summary>
+            <remarks>
+            The Default value is null.
+            </remarks>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.AutoReverse">
+            <summary>
+            Gets or sets a value indicating whether the values can be auto reversed.
+            </summary>
+            <value>
+            <c>true</c> if items can be return to initial, once reached maximum; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.EnableSpinAnimation">
+            <summary>
+            Gets or sets a value indicating whether <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/> can animate on
+            increment/decrement items.
+            </summary>
+            <value>
+            <c>true</c> if animation be run on increment/decrement items; otherwise, <c>false</c>.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.SpinButtonsAlignment"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.UpDownStyle"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.SpinButtonsAlignment">
+            <summary>
+            Gets or sets the spin buttons alignment.
+            </summary>
+            <value>
+            The default value is <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment"/>.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.EnableSpinAnimation"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.UpDownStyle"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.UpDownStyle">
+            <summary>
+            Gets or sets the style for updown buttons.
+            </summary>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.EnableSpinAnimation"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.SpinButtonsAlignment"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.AccentBrush">
+            <summary>
+            Gets or sets the background for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.ItemsSource">
+            <summary>
+            Gets or sets a collection used to generate the content of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.ContentTemplate">
+            <summary>
+            Gets or sets the data template used to display the content for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.CurrentIndex">
+            <summary>
+            Gets or sets the zero-based index of the currently selected item in a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown"/>.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.IncrementCommand">
+            <summary>
+            Gets the next Value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfDomainUpDown.DecrementCommand">
+            <summary>
+            Gets the previous Value
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfDomainUpDown.ValueChanged">
+            <summary>
+            Occurs when current <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.DomainUpDown.Value"/> changed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfMaskedEdit">
+            <summary>
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit"/> control 
+            restricts the data input by masks.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfTextBoxExt">
+            <summary>
+            Represents a Windows 8 extended textbox. The TextBoxExt control allows the user
+            to enter text in an application. This control has additional functionality that
+            is not found in the standard Windows 8 text box control, including Watermark
+            support and AutoComplete.
+            </summary>
+            <remarks>
+            The TextBoxExt is inherited from <see
+            cref="N:Windows.UI.Xaml.Controls.TextBox">TextBox</see>.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AllowPointerEventsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AllowPointerEvents.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteSource.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteItemTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteItemTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteItemTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteItemTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteItemsPanelProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteItemsPanel.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.IsSuggestionOpenProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsSuggestionOpen.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionBoxPositionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SuggestionBoxPosition.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SearchItemPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SearchItemPath.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Suggestions.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SuggestionIndex.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteMode.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionBoxPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteMode.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoCompleteMode.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.IgnoreCaseProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IgnoreCase.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.MinimumPrefixCharactersProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MinimumPrefixCharacters.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.PopupDelayProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupDelay.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.MaxDropDownHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaxDropDownHeight.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionBoxStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SuggestionBoxStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.DelimeterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Delimeter.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.ShowSuggestionsOnFocusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowSuggestionsOnFocus.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SelectedItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.Filter">
+            <summary>
+            Returns a SuggestionPredicate on filtering
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.FilterSuggestions">
+            <summary>
+            Filters the <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/> based the
+            text.
+            </summary>
+            <remarks>
+            The Return value is void.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Occurs when the key is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is released
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnMinimumPrefixCharactersChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the value of MinimumPrefixCharacters have changed
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnSuggestionsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the Suggestions have changed.
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnSuggestionsChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the Suggestions have changed.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnSelectedItemChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the Selected Item has changed.
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnSelectedItemChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the Selected Item has changed.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnIsSuggestionOpenChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the IsSuggestionOpen has changed.
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnIsSuggestionOpenChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the IsSuggestionOpen has changed.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnDeliMeterChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the Delimeter has changed.
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnAutoCompleteSourceChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the AutoCompleteSource has changed.
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnDelimeterChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+             <summary>
+            Prepares the text when the Delimeter has changed.
+             </summary>
+             <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.Dispose">
+            <summary>
+            Method for disposing unwanted objects
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Occurs when focus is obtained.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Occurs when focus is lost.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfTextBoxExt.OnApplyTemplate">
+            <summary>
+            Initialises all the child elements of
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.WatermarkProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Watermark.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.WatermarkTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WatermarkTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfTextBoxExt.WatermarkTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WatermarkTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AllowPointerEvents">
+            <summary>
+            Returns a value if set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteSource">
+            <summary>
+            Gets or sets an IEnumerable source used to generate the content of the
+            AutoComplete
+            </summary>
+            <remarks>
+            The default value is null.
+            </remarks>
+            <value>
+            The auto complete source.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteItemTemplate">
+            <summary>
+            Gets or sets the <see cref="N:Windows.UI.Xaml.Controls.DataTemplate"/> that is
+            used to display the content of the suggestion items with auto complete.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.AutoCompleteItemsPanel"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.AutoCompleteItemTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteItemTemplateSelector">
+            <summary>
+            Gets or sets a selection object that changes the DataTemplate to apply for 
+            content, based on processing information about the content item or its
+            container at run time.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteItemsPanel">
+            <summary>
+            Gets or sets <see cref="N:Windows.UI.Xaml.Controls.ItemsPanelTemplate"/> that
+            defines the panel to use for the layout of the items.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.AutoCompleteItemTemplate"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.IsSuggestionOpen">
+            <summary>
+            Gets or sets a value indicating whether this instance is <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionBox"/> open.
+            </summary>
+            <value>
+            <c>true</c> if this instance is suggestion open; otherwise, <c>false</c>. The default value is false.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionBoxPosition">
+            <summary>
+            Gets the <see cref="N:Windows.Foundation.Point">Point</see> that position the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionBox"/>.
+            </summary>
+            <value>
+            The default values is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SearchItemPath">
+            <summary>
+            Gets or sets the search item path is used to search the <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.Suggestions">
+            <summary>
+            Gets the list of suggestions associated with <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>.
+            </summary>
+            <value>
+            The suggestions.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionIndex">
+            <summary>
+            Gets the index of the suggestion.
+            </summary>
+            <value>
+            The default values is 0.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.AutoCompleteMode">
+            <summary>
+            Gets or sets <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.AutoCompleteMode"/> that
+            display the <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/> in several
+            ways.
+            </summary>
+            <value>
+            The default value is <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.None">AutoCompleteMode.None</see>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionBoxPlacement">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement"/> to display
+            the <see cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>.
+            </summary>
+            <value>
+            The default value is <see
+            cref="F:Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Bottom">SuggestionBoxPlacement.Bottom</see>.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionMode">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionMode"/> to filter the <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>
+            </summary>
+            <value>
+            The suggestion mode.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.IgnoreCase">
+            <summary>
+            Gets or sets a value indicating whether to consider the lower or upper case
+            letters for suggestions.
+            </summary>
+            <remarks>
+            The default value is false.
+            </remarks>
+            <value>
+            <c>true</c> if suggestions are displayed by typed letter case ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.MinimumPrefixCharacters">
+            <summary>
+            Gets or sets the minimum number of prefix characters.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.PopupDelay">
+            <summary>
+            Gets or sets the delay in popup
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.MaxDropDownHeight">
+            <summary>
+            Gets or sets the height of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionBox"/>.
+            </summary>
+            <value>
+            The default values is 200.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionBoxStyle">
+            <summary>
+            Gets or sets the style with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionBox"/>.
+            </summary>
+            <value>
+            The default values is null.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPlacement"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionBoxPosition"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionIndex"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.SuggestionMode"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.Delimeter">
+            <summary>
+            Returns a string as a delimiter
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.ShowSuggestionsOnFocus">
+            <summary>
+            Used to determine whether the complete suggestion list should be displayed when an empty textbox is focused.
+            </summary>
+            <value>The default value is false</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SelectedItem">
+            <summary>
+            Returns the value of the Selected item
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt"/>
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionsChanged">
+            <summary>
+            Occurs when <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/> changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SelectedItemChanged">
+            <summary>
+            Occurs when <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/> changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionPopupOpened">
+            <summary>
+            Occurs when suggestion box popup is opened.
+            </summary>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionPopupClosed">
+            <summary>
+            Occurs when suggestion box popup is closed.
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.IsSuggestionOpen"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.Watermark">
+            <summary>
+            Gets or sets the content displayed as a watermark in the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt"/> when it is empty.
+            </summary>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.WatermarkTemplate"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.WatermarkTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.WatermarkTemplate">
+            <summary>
+            <para>Gets or sets the <see cref="N:Windows.UI.Xaml.DataTemplate"/>
+            used to display the <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Watermark"/> of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt"/>.</para>
+            </summary>
+            <value>
+            The Default value is null. 
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Watermark"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.WatermarkTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfTextBoxExt.WatermarkTemplateSelector">
+            <summary>
+            Provides a way to choose a <see
+            cref="N:Windows.UI.Xaml.Controls.DataTemplateSelector"/> based on
+            the data object and the data-bound <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Watermark"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.WatermarkTemplate"/>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfTextBoxExt.SuggestionPredicate`1">
+            <summary>
+            Returns a value based on SuggestionPredicate
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="search"></param>
+            <param name="item"></param>
+            <returns>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfMaskedEdit.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.MaskProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Mask.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.MaskTypeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaskType.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.PromptCharProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PromptChar.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ValueMaskFormatProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ValueMaskFormat.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ShowPromptOnFocusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowPromptOnFocus.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.HasErrorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HasError.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ValidationModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ValidationMode.  This enables animation, styling, binding, etc...
+            </summary>        
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfMaskedEdit.CultureProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Culture.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfMaskedEdit.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfMaskedEdit.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the key down event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfMaskedEdit.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the lost focus event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfMaskedEdit.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the got focus event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.Mask">
+            <summary>
+            Gets or sets the Mask.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.MaskType">
+            <summary>
+            Gets or sets the MaskType.
+            </summary>
+            <value>
+            The default value is MaskType.Simple
+            <see cref="T:Syncfusion.UI.Xaml.Controls.MaskType"/>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.Value">
+            <summary>
+            Gets or sets the Value.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.PromptChar">
+            <summary>
+            Gets or sets the PromptChar.
+            </summary>
+            <value>
+            The default value is '_'.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ValueMaskFormat">
+            <summary>
+            Gets or sets the ValueMaskFormat.
+            </summary>
+            <value>
+            The default value is MaskFormat.IncludePromptAndLiterals.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ShowPromptOnFocus">
+            <summary>
+            Gets or sets the ShowPromptOnFocus.
+            </summary>
+            <value>
+            The default value is false.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.HasError">
+            <summary>
+            Gets the value of HasError.
+            </summary>
+            <value>
+            The default value is false.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.ValidationMode">
+            <summary>
+            Gets or sets the ValidationMode.
+            </summary>
+            <value>
+            Default value is ValidationMode.KeyPress.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.Culture">
+            <summary>
+            Gets or sets the Culture.
+            </summary>
+            <value>
+            Default value is Culture
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfMaskedEdit.KeyboardType">
+            <summary>
+            Gets or sets the KeyboardType.
+            </summary>
+            <value>
+            Default value is QWERTY
+            </value>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.MaskProperties">
+            <summary>
+             Specifies the properties for each character in Mask.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SpecialCharactersCollection">
+            <summary>
+             Specifies the list of SpecialCharactersCollection.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.Items">
+            <summary>
+            Items Class for Custom Label support
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.Items.m_label">
+            <summary>
+            Gets or sets the label.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.Items.m_value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.Items.OnPropertyChanged(System.String)">
+            <summary>
+            Occurs when the property changed.
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.Items.label">
+            <summary>
+            Gets or sets the label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.Items.value">
+            <summary>
+            Gets or sets the value entered by the user.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.Items.PropertyChanged">
+            <summary>
+            Invokes an event when there is a change in prperty.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfRangeSlider">
+            <summary>
+            RangeSlider is a <see
+            cref="T:Windows.UI.Xaml.Controls.Primitives.RangeBase"/> that lets the user
+            select from a range of values by moving a <see
+            cref="T:Windows.UI.Xaml.Controls.Primitives.Thumb"/> control along a track.
+            </summary>
+            <remarks>
+            Range Slider control allows the user to select the range of value within the
+            specified minimum and maximum limit. The range can be selected by moving the
+            Thumb control along a track.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.OrientationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.IsDirectionReversedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsDirectionReversed.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ShowRangeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowRange.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.MoveToPointProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowRange.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.IntermediateRangeStartProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RangeStart.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.IntermediateRangeEndProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RangeEnd.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeStartProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RangeStart.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeEndProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RangeEnd.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ThumbTooltipPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ThumbTooltipPlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ThumbToolTipPrecisionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ThumbToolTipPrecision.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.SnapsToProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SnapsTo.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.StepFrequencyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StepFrequency.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.TickFrequencyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TickFrequency.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.IntermediateValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IntermediateValue.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.TickPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TickPlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.LabelPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LabelPlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ValuePlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ValuePlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ShowValueLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowValueLabels.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ShowCustomLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowCustomLabels.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.CustomLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomLabels.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.LabelOrientationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LabelOrientation.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRangeSlider.ThumbIntervalProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ThumbInterval.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnHorizontalRangeEndThumbDragDelta(System.Object,System.Windows.Controls.Primitives.DragDeltaEventArgs)">
+            <summary>
+            Occurs when the HorizontalRangeEndThumb is dragged.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMinimumChanged(System.Double,System.Double)">
+            <summary>
+            Occurs when the Minimum value has changed.
+            </summary>
+            <param name="oldMinimum"></param>
+            <param name="newMinimum"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMaximumChanged(System.Double,System.Double)">
+            <summary>
+            Occurs when the Maximum value has changed.
+            </summary>
+            <param name="oldMaximum"></param>
+            <param name="newMaximum"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Gets the position of the pointer when the mouse is moved
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is moved
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the focus is obtained
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Occurs when the pointer entered
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Occurs when the pointer exited
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Occurs when the key is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Closes the ToolTips
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Occurs when the focus is obtained
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRangeSlider.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Occurs when the focus is lost
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.Orientation">
+            <summary>
+            Gets or sets a value that indicates the dimension for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <value>
+            It will accepts the type is <see
+            cref="N:Windows.UI.Xaml.Controls.Orientation"/>. The default value is <see
+            cref="N:Windows.UI.Xaml.Controls.Orientation.Horizontal">Orientation.Horizontal</see>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.IsDirectionReversed">
+            <summary>
+            Gets or sets the direction of increasing value with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <remarks>
+            The default is false.
+            </remarks>
+            <value>
+            <c>true</c> if this instance is direction reversed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ShowRange">
+            <summary>
+            Gets or sets a value indicating whether to show the range between the thumb with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <remarks>
+            The default value is false.
+            </remarks>
+            <value>
+            <c>true</c> it show the range; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.MoveToPoint">
+            <summary>
+            Gets or sets a value indicating whether to change thumb position <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <remarks>
+            The default value is None.
+            </remarks>
+            <value>
+            <c>true</c> it show the range; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.IntermediateRangeStart">
+            <summary>
+            Gets the intermediate <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeStart"/> value.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeStart"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeEnd"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeEnd"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.IntermediateRangeEnd">
+            <summary>
+            Gets the intermediate <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeEnd"/> value.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeStart"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeStart"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeEnd"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeStart">
+            <summary>
+            Gets or sets the start value of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeEnd"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeEnd"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeStart"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeEnd">
+            <summary>
+            Gets or sets the end value of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeStart"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.RangeStart"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeEnd"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ThumbToolTipPlacement">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.ThumbToolTipPlacement"/> mode to place
+            the tool tip with <see cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <value>
+            The default value is  <see
+            cref="F:Syncfusion.UI.Xaml.Controls.Input.ThumbToolTipPlacement.TopLeft">ThumbToolTipPlacement.TopLeft</see>.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.ThumbToolTipPrecision"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ThumbToolTipPrecision">
+            <summary>
+            Gets or set the precision of value to be displayed in the tooltip with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.ThumbToolTipPlacement"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.SnapsTo">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SliderSnapsTo"/> that determines
+            whether the <see cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/> snaps
+            to steps or ticks.
+            </summary>
+            <value>
+            The default value is <see
+            cref="F:Syncfusion.UI.Xaml.Controls.Input.SliderSnapsTo.StepValues">SliderSnapsTo.StepValues</see>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.StepFrequency">
+            <summary>
+            Gets or sets the value used to specify the interval between snap points when the
+            <see cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.SnapsTo"/> is set to
+            <see
+            cref="F:Syncfusion.UI.Xaml.Controls.Input.SliderSnapsTo.StepValues">SliderSnapsTo.StepValues</see>.
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.TickFrequency"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.TickFrequency">
+            <summary>
+            Gets or sets the value is used to define the number of ticks along the track,
+            based on Minimum and Maximum values.
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.StepFrequency"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.IntermediateValue">
+            <summary>
+            Gets the intermediate value. This works when <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.ShowRange"/> is false.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeEnd"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.RangeSlider.IntermediateRangeStart"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.TickPlacement">
+            <summary>
+            Gets or sets the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickPlacement"/> that determine where
+            to draw tick marks in relation to the track with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RangeSlider"/>.
+            </summary>
+            <value>
+            The default value is <see
+            cref="F:Syncfusion.UI.Xaml.Controls.Input.TickPlacement.Inline">TickPlacement.Inline</see>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.LabelPlacement">
+            <summary>
+            Gets or sets the Label placement
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.LabelPlacement"/>
+            </summary>
+            <remarks> 
+            The default value is <see cref="T:Syncfusion.UI.Xaml.Controls.Input.LabelPlacement.TopLeft"/> 
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ValuePlacement">
+            <summary>
+            Gets or sets the value placement
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.ValuePlacement"/>
+            </summary>
+            <remarks> 
+            The default value is <see cref="T:Syncfusion.UI.Xaml.Controls.Input.ValuePlacement.BottomRight"/> 
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ShowValueLabels">
+            <summary>
+            Returns a value if set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+            <remarks>The default value is false</remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ShowCustomLabels">
+            <summary>
+            Returns a value if set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+            <remarks>The default value is false</remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.CustomLabels">
+            <summary>
+            Gets or sets the collection of custm labels
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.LabelOrientation">
+            <summary>
+            Gets or sets the orientation of the label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRangeSlider.ThumbInterval">
+            <summary>
+            Gets or sets the interval between thumbs
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeChanged">
+            <summary>
+            Occurs when RangeStart or RangeEnd gets changed<see
+            cref="P:Syncfusion.UI.Xaml.Controls.Layout.Input"/> is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeStartChanged">
+            <summary>
+            Occurs when RangeStart gets changed<see
+            cref="P:Syncfusion.UI.Xaml.Controls.Layout.Input"/> is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfRangeSlider.RangeEndChanged">
+            <summary>
+            Occurs when RangeEnd gets changed<see
+            cref="P:Syncfusion.UI.Xaml.Controls.Layout.Input"/> is changed.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.MovePoint">
+            <summary>
+            specify the mouse move position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MovePoint.None">
+            <summary>
+            Thumb doesn't move when clicked using mouse
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MovePoint.MoveToTapPosition">
+            <summary>
+            Thumb move to the current tap position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MovePoint.IncrementByLargeChange">
+            <summary>
+            Increment RangeValue by LargeChange
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MovePoint.IncrementBySmallChange">
+            <summary>
+            Increment RangeValue by SmallChange
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.TickBar">
+            <summary>
+            Represents a TickBar Control
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.TickBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBar"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.MaximumProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Maximum.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.MinimumProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Minimum.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.TickFrequencyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TickFrequency.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.FillProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Fill.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.TicksProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.OrientationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.TickPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TickPlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.IsDirectionReversedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsDirectionReversed.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.ShowValueLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowValueLabels.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.ShowCustomLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowCustomLabels.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.LabelOrientationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LabelOrientation.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.LabelPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LabelPlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.ValuePlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ValuePlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBar.CustomLabelsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomLabels.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.TickBar.CreateTicks">
+            <summary>
+            Create the specified number of ticks
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.TickBar.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the control
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBar"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.Maximum">
+            <summary>
+            Gets or sets the maximum value that is possible for a tick mark.
+            </summary>
+            <value>The maximum.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.Minimum">
+            <summary>
+            Gets or sets the minimum value that is possible for a tick mark. 
+            </summary>
+            <value>The minimum.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.TickFrequency">
+            <summary>
+            Gets or sets the interval between tick marks. 
+            </summary>
+            <value>The tick frequency.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.Fill">
+            <summary>
+            Gets or sets the Brush that is used to draw the tick marks. 
+            </summary>
+            <value>The fill.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.Ticks">
+            <summary>
+            Gets or sets the positions of the tick marks. 
+            </summary>
+            <value>The ticks.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.Orientation">
+            <summary>
+            Gets or sets the tick bar orientation.
+            </summary>
+            <value>The tick bar orientation.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.TickPlacement">
+            <summary>
+            Gets or sets the tickplacement for the ticks <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBar"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.TickPlacement"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.IsDirectionReversed">
+            <summary>
+            Returns a value when the direction is reversed
+            </summary>
+            <remarks> The default value is false </remarks>
+            <value>
+            <c>true</c> if instance is created; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.ShowValueLabels">
+            <summary>
+            Returns a value to show Value labels
+            </summary>
+            <remarks> The default value is false </remarks>
+            <value>
+            <c>true</c> if instance is created; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.ShowCustomLabels">
+            <summary>
+            Returns a value to show custom labels
+            </summary>
+            <remarks> The default value is false </remarks>
+            <value>
+            <c>true</c> if instance is created; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.LabelOrientation">
+            <summary>
+            Returns a value on setting the label orientation.
+            <see cref="T:Windows.UI.Xaml.Controls.Orientation"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.LabelPlacement">
+            <summary>
+            Returns the position of the placement of the labels
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.LabelPlacement"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.ValuePlacement">
+            <summary>
+            Returns the position of the placement of the values
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.ValuePlacement"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBar.CustomLabels">
+            <summary>
+            Returns a list of custom labels
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.TickBarItem">
+            <summary>
+            Represents a set of items for the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBar"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.TickBarItem.#ctor">
+            <summary>
+            Creates an instance for the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBarItem"/> class.
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls.Input"/> namespace.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.TickProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Tick.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.LineOpacityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LineOpacity.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.StartPointXProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StartPoint.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.StartPointYProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StartPointY.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.EndPointXProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EndPoint.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.EndPointYProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EndPointY.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.FillProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Fill.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickBarItem.TicksProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Ticks.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.TickBarItem.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBarItem"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.Tick">
+            <summary>
+            Gets or sets a value for the tick
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.LineOpacity">
+            <summary>
+            Gets or sets the value for the opacity of the line
+            </summary>
+            <value>
+            Te default value is 1.0
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.StartPointX">
+            <summary>
+            Gets or sets the value for the StartPointX
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.StartPointY">
+            <summary>
+            Gets or sets the value for the StartPointY
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.EndPointX">
+            <summary>
+            Gets or sets the value for the EndPointX
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.EndPointY">
+            <summary>
+            Gets or sets the value for the EndPoinY
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.Fill">
+            <summary>
+            Gets or sets the Brush value for the <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.TickBarItem"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.TickBarItem.Ticks">
+            <summary>
+            Gets or sets the value for the ticks.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfRating">
+            <summary>
+            Rating is a <see cref="N:Windows.UI.Xaml.Controls.ItemsControl">ItemsControl</see> which
+            allows the user to rate the items from the available predefined number of items.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.CornerRadiusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CornerRadius.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.PrecisionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Precision.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.AutoToolTipPrecisionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AutoToolTipPrecision.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.PreviewValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PreviewValue.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.ShowToolTipProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ShowToolTip.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.ToolTipForegroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ToolTipForeground.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.ItemsCountProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemsCount.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.IsReadOnlyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsReadOnly.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRating.ValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Checks if the item is a <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfRatingItem"/>
+            </summary>
+            <param name="item"></param>
+            <returns>
+            <c>true</c> if it is a SfRatingItem; otherwise, <c>false</c>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.GetContainerForItemOverride">
+            <summary>
+            Checks if the item is a <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfRatingItem"/>
+            </summary>
+            <returns>DependencyObject</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Arranges the container for overrided items
+            </summary>
+            <param name="element"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Occurs when the pointer exited
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is released
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Occurs when the pointer entered
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRating.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>
+            Occurs when the manipulation started
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.CornerRadius">
+            <summary>
+            Gets or sets a <see cref="T:Windows.UI.Xaml.CornerRadius"/> that represents the
+            degree to which the corners of a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem">RatingItem&apos;s</see> are
+            rounded.
+            </summary>
+            <value>
+            The corner radius.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.Precision">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.UI.Xaml.Primitives.Precision"/> to rate
+            the items.
+            </summary>
+            <value>
+            The default value is <see
+            cref="F:Syncfusion.UI.Xaml.Primitives.Precision.Standard">Precision.Standard</see>.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.AutoToolTipPrecision">
+            <summary>
+            Gets or sets the value that determine number of decimal shown in the tool tip
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>.
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.PreviewValue">
+            <summary>
+            Gets or sets the value associated with the popup.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.ShowToolTip">
+            <summary>
+            Gets or sets a value indicating whether show or hide the tool tip.
+            </summary>
+            <value>
+            <c>true</c> the tool tip is shown; otherwise, <c>false</c>. The default value is true.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.ToolTipForeground">
+            <summary>
+            Used to set the Foreground for the ToolTip of the SfRating control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.ItemsCount">
+            <summary>
+            Gets or sets value that determines the count of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/> with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/> control.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.IsReadOnly">
+            <summary>
+            Gets or sets a value indicating whether <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/> is read only.
+            </summary>
+            <value>
+            <c>true</c> if this instance is read only; otherwise, <c>false</c>. The default value is false.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRating.Value">
+            <summary>
+            Gets or sets the current value with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/>
+        </member>
+        <member name="E:Syncfusion.Windows.Controls.Input.SfRating.ValueChanged">
+            <summary>
+            Occurs when the value changed with <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/> control.
+            </summary>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.Input.Rating.Value"/>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SfRatingItem">
+            <summary>
+            Represent a selectable item inside the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/> control.
+            </summary>
+            <remarks>
+            The RatingItem is a <see cref="N:Windows.UI.Xaml.Controls.ConentControl"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRatingItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.RatedFillProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrushBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.RatedStrokeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RatedFillBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.RatedStrokeThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RatedStrokeThickness.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.UnratedFillProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UnratedFill.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.UnratedStrokeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UnratedStroke.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.UnratedStrokeThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UnratedStrokeThickness.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.PointerOverFillProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PointerOverFill.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.PointerOverStrokeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PointerOverStroke.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.PointerOverStrokeThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PointerOverStrokeThickness.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.InternalPrecisionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for InternalPrecision.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SfRatingItem.InternalValueProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for InternalValue.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRatingItem.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Occurs when the pointer is moved
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRatingItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRatingItem.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Occurs when the pointer is released
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRatingItem.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Occurs when the pointer exited
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SfRatingItem.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.RatingItem"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.RatedFill">
+            <summary>
+            Gets or sets the value that fills the rated area with the specified solid color.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.RatedStroke">
+            <summary>
+            Gets or sets the brush that paints the rated area outline with a specified solid
+            color.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.RatedStrokeThickness">
+            <summary>
+            Gets or sets the value that specifies the outline thickness for the rated area.
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.UnratedFill">
+            <summary>
+            Gets or sets the value that fills the unrated area with the specified solid
+            color.
+            </summary>
+            <value>
+            The default value is <see cref="T:Windows.UI.Colors.Transparent">Colors.Transparent</see>.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.UnratedStroke">
+            <summary>
+            Gets or sets the brush that paints the unrated area outline with a specified
+            solid color.
+            </summary>
+            <value>
+            The default value is <see cref="T:Windows.UI.Colors.Gray">Colors.Gray</see>.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.UnratedStrokeThickness">
+            <summary>
+            Gets or sets the value that specifies the outline thickness for the unrated
+            area.
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.PointerOverFill">
+            <summary>
+            Gets or sets the value that fills the pointer over area with the specified solid
+            color.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.PointerOverStroke">
+            <summary>
+            Gets or sets the brush that paints the pointer over area outline with a
+            specified solid color.
+            </summary>
+            <value>
+            The default value is <see cref="T:Windows.UI.Colors.Gray">Colors.Gray</see>.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.PointerOverStrokeThickness">
+            <summary>
+            Gets or sets the value that specifies the outline thickness for the pointer over
+            area.
+            </summary>
+            <value>
+            The default value is 1.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.Rating"/>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.InternalPrecision">
+            <summary>
+            Gets or sets the internal precision.
+            </summary>
+            <value>The internal precision.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.SfRatingItem.InternalValue">
+            <summary>
+            Gets or sets the internal value.
+            </summary>
+            <value>The internal value.</value>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.FilterModel">
+            <summary>
+            Represents a class for the Filter Model.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.FilterModel.Suggestions">
+            <summary>
+            Gets or sets the Suggestions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.FilterModel.Appends">
+            <summary>
+            Gets or sets the Appends.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SuggestionBox">
+            <summary>
+             Represent a popup that displayed when the matching <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Input.TextBoxExt.Suggestions"/> found.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SuggestionBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.SuggestionBox"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.SuggestionBox.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Occurs when the key is pressed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.MemoryConverter">
+            <summary>
+            Represents a class for converting values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.MemoryConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the value and stores in memory
+            </summary>
+            <value> Visibility is
+            <c>Collapsed</c> if memory is 0; otherwise, <c>Visible</c>.
+            </value>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Controls.Input.MemoryConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Throws exception if cant be converted back
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.KeyInputEventHandler">
+            <summary>
+            Handles the events invoked due to key input.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.KeyInputEventArgs">
+            <summary>
+            Represents a class for the Arguments of KeyInput events.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.KeyInputEventArgs.Key">
+            <summary>
+            Getsor Sets the Key.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.FunctionEventHandler">
+            <summary>
+            Handles the events invoked due to Functions.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.FunctionEventArgs">
+            <summary>
+            Represents a class for the Arguments of Function events.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.FunctionEventArgs.Function">
+            <summary>
+            Gets or sets the functions <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.FunctionsPane"/> 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.CancelEventHandler">
+            <summary>
+            Handler for Cancel operations.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.RangeChangedEventArgs">
+            <summary>
+            Invoked due to change in range
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeChangedEventArgs.NewStartValue">
+            <summary>
+            Gets or sets the new value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeChangedEventArgs.OldStartValue">
+            <summary>
+            Gets or sets the previous value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeChangedEventArgs.NewEndValue">
+            <summary>
+            Gets or sets the new value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeChangedEventArgs.OldEndValue">
+            <summary>
+            Gets or sets the previous value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeStartChagedEventArgs.NewStartValue">
+            <summary>
+            Gets or sets the new value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeStartChagedEventArgs.OldStartValue">
+            <summary>
+            Gets or sets the previous value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeEndChagedEventArgs.NewEndValue">
+            <summary>
+            Gets or sets the new value of a state value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.RangeEndChagedEventArgs.OldEndValue">
+            <summary>
+            Gets or sets the previous value of a state value property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.RangeChangedEventHandler">
+            <summary>
+            Occurs when an event is invoked due to change in the range.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.RangeStartChangedEventHandler">
+            <summary>
+            Occurs when an event is invoked due to change in the rangeStart.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.RangeEndChangedEventHandler">
+            <summary>
+            Occurs when an event is invoked due to change in the rangeEnd.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.ValueChangedEventArgs">
+            <summary>
+            Represents the Arguments for <see 
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.ValueChangedEventHandler"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.ValueChangedEventArgs.NewValue">
+            <summary>
+            Gets or sets the new value of a range value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.ValueChangedEventArgs.OldValue">
+            <summary>
+            Gets or sets the previous value of a range value property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.ValueChangedEventHandler">
+            <summary>
+            Occurs when the Value is changed
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.AutoCompleteMode">
+            <summary>
+             Specifies the mode of the auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.AutoCompleteMode.None">
+            <summary>
+            Suggestion and append are not performed with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.AutoCompleteMode.Append">
+            <summary>
+            Perform append only with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.AutoCompleteMode.Suggest">
+            <summary>
+            Perform suggestion only with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.AutoCompleteMode.SuggestAppend">
+            <summary>
+            Perform suggestions and append with auto complete.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SuggestionBoxPlacement">
+            <summary>
+             Specify the placement of suggestion box with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionBoxPlacement.Top">
+            <summary>
+            The SuggestionBox always placed top with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionBoxPlacement.Bottom">
+            <summary>
+            The SuggestionBox always at the bottom with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionBoxPlacement.None">
+            <summary>
+            The SuggestionBox not displayed with auto complete.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SuggestionMode">
+            <summary>
+             specifies the modes of search with auto complete.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.None">
+            <summary>
+            Returns the all the AutoCompleteSource collection to suggestions
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.StartsWith">
+            <summary>
+            Returns the suggestions whether the beginning of the string matches in the list which is culture sensitive.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.StartsWithCaseSensitive">
+            <summary>
+            Returns the suggestions whether the beginning of the string matches in the list which is culture and case sensitive.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.StartsWithOrdinal">
+            <summary>
+            Returns the suggestions whether the beginning of the string matches in the list by using StringComparer.OrdinalIgnoreCase.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.StartsWithOrdinalCaseSensitive">
+            <summary>
+            Returns the suggestions whether the beginning of the string matches in the list by using StringComparer.Ordinal.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.Contains">
+            <summary>
+            Returns the suggestions whether the beginning of the string contains in the list which is culture sensitive.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.ContainsCaseSensitive">
+            <summary>
+            Returns the suggestions whether the beginning of the string contains in the list which is culture and case sensitive.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.ContainsOrdinal">
+            <summary>
+            Returns the suggestions whether the beginning of the string contains in the list by using StringComparer.OrdinalIgnoreCase.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.ContainsOrdinalCaseSensitive">
+            <summary>
+            Returns the suggestions whether the beginning of the string contains in the list by using StringComparer.Ordinal.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.Equals">
+            <summary>
+            Returns the suggestions whether the beginning of the string equals in the list which is culture sensitive.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.EqualsCaseSensitive">
+            <summary>
+            Returns the suggestions whether the beginning of the string equals in the list which is culture and case sensitive.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.EqualsOrdinal">
+            <summary>
+            Returns the suggestions whether the beginning of the string equals in the list by using StringComparer.OrdinalIgnoreCase.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.EqualsOrdinalCaseSensitive">
+            <summary>
+            Returns the suggestions whether the beginning of the string equals in the list by using StringComparer.Ordinal.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SuggestionMode.Custom">
+            <summary>
+            Returns the Suggestion whether the specified object occurs with in the list.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.CalculatorFunctions">
+            <summary>
+            Represents an enum list for the calculator functions
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Add">
+            <summary>
+            Add function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Subract">
+            <summary>
+            Subract function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Multiply">
+            <summary>
+            Multiply function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Divide">
+            <summary>
+            Divide function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Back">
+            <summary>
+            Back function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.ClearEntry">
+            <summary>
+            ClearEntry function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Clear">
+            <summary>
+            Clear function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Percentage">
+            <summary>
+            Percentage function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.SquareRoot">
+            <summary>
+            SquareRoot function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Reciproc">
+            <summary>
+            Reciproc function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Memory">
+            <summary>
+            Memory function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.MemoryAdd">
+            <summary>
+            MemoryAdd function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.MemorySubract">
+            <summary>
+            MemorySubract function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.MemoryClear">
+            <summary>
+            MemoryClear function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.MemoryRecall">
+            <summary>
+            MemoryRecall function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Return">
+            <summary>
+            Return function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.Sign">
+            <summary>
+            Sign function
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.CalculatorFunctions.None">
+            <summary>
+            No function
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.MaskType">
+            <summary>
+             Specifies the mask type for SfMaskedEdit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskType.Simple">
+            <summary>
+            Represents the Simple mask elements.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskType.Regular">
+            <summary>
+            Represents the basic regular expression mask elements.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskType.RegEx">
+            <summary>
+            Represents the complex regular expression mask elements.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.MaskFormat">
+            <summary>
+             Specifies the mask format for SfMaskedEdit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskFormat.ExcludePromptAndLiterals">
+            <summary>
+            Excludes the prompt character and literals in value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskFormat.IncludeLiterals">
+            <summary>
+            Includes only the literals in value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskFormat.IncludePrompt">
+            <summary>
+            Includes only the prompt character in value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.MaskFormat.IncludePromptAndLiterals">
+            <summary>
+            Includes the prompt character and literals in value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.InputValidationMode">
+            <summary>
+             Specifies the validation mode for SfMaskedEdit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.InputValidationMode.KeyPress">
+            <summary>
+            Perform validation on every key press.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.InputValidationMode.LostFocus">
+            <summary>
+            Perform validation on lost focus.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.KeyboardOptions">
+            <summary>
+             Specifies the Keyboard Type for SfMaskedEdit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.KeyboardOptions.Default">
+            <summary>
+            Perform if Keyboard is qwerty
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.KeyboardOptions.AZERTY">
+            <summary>
+            Perform if Keyboard is of other types
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.TickPlacement">
+            <summary>
+            Specifies the Ticks placement with range slider.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight">
+            <summary>
+            The ticks are placed bottom for horizontal orientation and  right for vertical orientation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickPlacement.Inline">
+            <summary>
+            The ticks are placed inside the range slider.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickPlacement.None">
+            <summary>
+            The ticks are not showing.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickPlacement.Outside">
+            <summary>
+            The ticks are placed both side for  horizontal orientation ticks are in top and bottom and for  vertical orientation ticks are in left and right.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.TickPlacement.TopLeft">
+            <summary>
+            The ticks are placed top for horizontal orientation and  left for vertical orientation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.LabelPlacement">
+            <summary>
+            Specifies the Ticks placement with range slider.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.LabelPlacement.BottomRight">
+            <summary>
+            The labels are placed bottom for horizontal orientation and  right for vertical orientation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.LabelPlacement.TopLeft">
+            <summary>
+            The labels are placed top for horizontal orientation and  left for vertical orientation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.ValuePlacement">
+            <summary>
+            Specifies the Ticks placement with range slider.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ValuePlacement.BottomRight">
+            <summary>
+            The labels are placed bottom for horizontal orientation and  right for vertical orientation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ValuePlacement.TopLeft">
+            <summary>
+            The labels are placed top for horizontal orientation and  left for vertical orientation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.SliderSnapsTo">
+            <summary>
+            Specifies the SliderSnapsTo with range slider.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SliderSnapsTo.StepValues">
+            <summary>
+            Conform the indicator to the step values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SliderSnapsTo.Ticks">
+            <summary>
+             Conform the indicator to the tick marks.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.SliderSnapsTo.None">
+            <summary>
+             Conform the indicator to Values.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.ThumbToolTipPlacement">
+            <summary>
+            specifies the Thumb ToolTip placement with range slider.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ThumbToolTipPlacement.BottomRight">
+            <summary>
+            The tooltip placed bottom for horizontal orientation and  right for vertical orientation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ThumbToolTipPlacement.None">
+            <summary>
+            The tooltip is not showing.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Controls.Input.ThumbToolTipPlacement.TopLeft">
+            <summary>
+            The tooltip is placed top for horizontal orientation and  left for vertical orientation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfInputBaseAssembly">
+            <summary>
+            SharedBase assembly class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfInputBaseAssembly.Name">
+            <summary>
+            Name of the assembly.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfInputBaseAssembly.Assembly">
+            <summary>
+            Defines assembly object reference variable.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfInputBaseAssembly.RootNamespace">
+            <summary>
+            Root namespace of the assembly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfInputBaseAssembly.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Syncfusion.SfInputBaseAssembly"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfInputBaseAssembly.AssemblyResolver(System.Object,System.ResolveEventArgs)">
+            <summary>
+            Assemblies the resolver.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.ResolveEventArgs"/> instance containing the event data.</param>
+            <returns>Assembly object.</returns>
+        </member>
+        <member name="T:Syncfusion.AssemblyInfo">
+            <summary>
+            Assembly info class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Controls.Input.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Controls.Input.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

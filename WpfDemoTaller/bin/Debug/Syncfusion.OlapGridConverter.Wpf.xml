@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.OlapGridConverter.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport">
+            <summary>
+            GridExcelExport exports the Pivot data to Excel with the applied style
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.m_Total">
+            <summary>
+            Total value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.m_GrandTotal">
+            <summary>
+            Grand Total value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.application">
+            <summary>
+            Declare IAplication to instantiate variouss kinds applications  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.excelEngine">
+            <summary>
+            Create instance for Excel Engine
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.workBook">
+            <summary>
+            Declare Woorkbook to be added in Excel  file
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.sheet">
+            <summary>
+            Declare sheets to be added in workBook . 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.GridExportStyle">
+            <summary>
+            Create instance for ExportingGridStyleInfo
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.#ctor(Syncfusion.Olap.Engine.PivotEngine,Syncfusion.Windows.Grid.Olap.Common.ExportingGridStyleInfo,Syncfusion.Olap.Engine.GridLayout,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport"/> class.
+            </summary>
+            <param name="DrillResult">The drill result.</param>
+            <param name="styleinfo">The styleinfo.</param>
+            <param name="layout">The layout.</param>
+            <param name="ItemSource">if set to <c>true</c> [item source].</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.#ctor(Syncfusion.Olap.Engine.PivotEngine,System.Object,Syncfusion.Olap.Engine.GridLayout,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport"/> class.
+            </summary>
+            <param name="drillResult">The drill result.</param>
+            <param name="styleinfo">The styleinfo.</param>
+            <param name="layout">The layout.</param>
+            <param name="ItemSource">if set to <c>true</c> [item source].</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.Export(System.String)">
+            <summary>
+            Exports the specified file name.
+            </summary>
+            <param name="FileName">Name of the file.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.SaveAs(System.String)">
+            <summary>
+             To save the Workbook with Exported Data
+            </summary>
+            <param name="Filename">The filename.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.FormatExcel">
+            <summary>
+            Apply styles to rows and column for Excel sheet .
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.GetColumnRange(System.Int32,System.Int32)">
+            <summary>
+            Set the cell range to span row or column
+            </summary>
+            <param name="col"></param>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.GetExcelRange(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets Excel Range to draw OlapGrid data
+            </summary>
+            <param name="col1"></param>
+            <param name="row1"></param>
+            <param name="col2"></param>
+            <param name="row2"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.AnyStyleColor">
+            <summary>
+            Gets or sets the color of any style.
+            </summary>
+            <value>The color of any style.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.ColumnHeaderStyleColor">
+            <summary>
+            Gets or sets the color of the column header style.
+            </summary>
+            <value>The color of the column header style.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.RowHeaderStyleColor">
+            <summary>
+            Gets or sets the color of the row header style.
+            </summary>
+            <value>The color of the row header style.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.summaryColor">
+            <summary>
+            Gets or sets the color of the summary.
+            </summary>
+            <value>The color of the summary.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.SummaryStyleColor">
+            <summary>
+            Gets or sets the color of the summary style.
+            </summary>
+            <value>The color of the summary style.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.TextStyleColor">
+            <summary>
+            Gets or sets the color of the text style.
+            </summary>
+            <value>The color of the text style.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.PivotData">
+            <summary>
+            Gets or sets the pivot data.
+            </summary>
+            <value>The pivot data.</value>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.Layout">
+            <summary>
+            Gets or sets Grid Layout
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Grid.Olap.Converter.GridExcelExport.ItemSource">
+            <summary>
+            Gets or sets a value indicating whether [item source].
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport">
+            <summary>
+            GridPdfExport exports the Pivot data to Pdf with the applied style
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.#ctor(Syncfusion.Olap.Engine.PivotEngine,Syncfusion.Windows.Grid.Olap.Common.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport"/> class.
+            </summary>
+            <param name="engine">The engine.</param>
+            <param name="gridStyleInfo">The grid style info.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.#ctor(Syncfusion.Olap.Engine.PivotEngine,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport"/> class.
+            </summary>
+            <param name="engine">The engine.</param>
+            <param name="gridStyleInfo">The grid style info.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.Export(System.String)">
+            <summary>
+            Exports the specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.ValueCellStyle(Syncfusion.Pdf.Grid.PdfGridCellStyle,Syncfusion.Pdf.Graphics.PdfBrush)">
+            <summary>
+            Cell style for Value Cell.
+            </summary>
+            <param name="cellStyle">The cell style.</param>
+            <param name="cellValueColor">Color of the value cell.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.SummaryColumnStyle(Syncfusion.Pdf.Grid.PdfGridCellStyle,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfStringFormat)">
+            <summary>
+            Cell style for Summary Column.
+            </summary>
+            <param name="cellStyle">The cell style.</param>
+            <param name="summaryColumnBackColor">Backcolor of the summary column.</param>
+            <param name="summaryColumnForeColor">ForeColor of the summary column.</param>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.SummaryRowStyle(Syncfusion.Pdf.Grid.PdfGridCellStyle,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfStringFormat)">
+            <summary>
+            Cell style for Summary Row.
+            </summary>
+            <param name="cellStyle">The cell style.</param>
+            <param name="summaryRowBackColor">BackColor of the summary row.</param>
+            <param name="summaryRowForeColor">ForeColor of the summary row.</param>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.ColumnHeaderStyle(Syncfusion.Pdf.Grid.PdfGridCellStyle,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfStringFormat)">
+            <summary>
+            CellStyle for Column Header
+            </summary>
+            <param name="cellStyle">The cell style.</param>
+            <param name="headerColumnBackColor">BackColor of the header column .</param>
+            <param name="headerColumnForeColor">ForeColor of the header column .</param>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.RowHeaderStyle(Syncfusion.Pdf.Grid.PdfGridCellStyle,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfBrush,Syncfusion.Pdf.Graphics.PdfStringFormat)">
+            <summary>
+            CellStyle for RowHeader
+            </summary>
+            <param name="cellStyle">The cell style.</param>
+            <param name="headerRowBackColor">BackColor of the header row.</param>
+            <param name="headerRowForeColor">ForeColor of the header row.</param>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.GetParentCell(Syncfusion.Olap.Engine.PivotCellDescriptor)">
+            <summary>
+            Gets the parent cell.
+            </summary>
+            <param name="cellDesc">The child celldescriptor.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.GetRowHeight(System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the height of the row.
+            </summary>
+            <param name="CellFontSize">Size of the cell font.</param>
+            <param name="HeaderFontSize">Size of the header font.</param>
+            <param name="SummaryFontSize">Size of the summary font.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridPdfExport.GetFontInfo(System.String,System.String,System.Double)">
+            <summary>
+            Gets the font info.
+            </summary>
+            <param name="fontName">Name of the font.</param>
+            <param name="fontStyle">The font style.</param>
+            <param name="fontSize">Size of the font.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Grid.Olap.Converter.GridWordExport">
+            <summary>
+            GridWordExport exports the Pivot data to Word with the applied style
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridWordExport.#ctor(Syncfusion.Olap.Engine.PivotEngine,Syncfusion.Olap.Engine.GridLayout)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Grid.Olap.Converter.GridWordExport"/> class.
+            </summary>
+            <param name="DrillResult">The drill result.</param>
+            <param name="gridLayout">The grid layout.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridWordExport.Export(System.String,Syncfusion.Windows.Grid.Olap.Common.ExportingGridStyleInfo)">
+            <summary>
+            Exports the specified filename.
+            </summary>
+            <param name="filename">The filename.</param>
+            <param name="styleinfo">The styleinfo.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Grid.Olap.Converter.GridWordExport.Export(System.String,System.Object)">
+            <summary>
+            Exports the specified filename.
+            </summary>
+            <param name="fileName">The filename.</param>
+            <param name="styleinfo">The styleinfo.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="4EC61458-9096-4281-A3B3-1CCA0A34CB4E" ModuleId="Data" />
+  <Module PersistentId="CEAD49FC-D034-47F2-8D87-9F27C83151B7" ModuleId="Entities" />
+  <Module PersistentId="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6" ModuleId="Domain" />
+  <Module PersistentId="4C55F212-45AE-4CAA-93C1-FE7C526DC05C" ModuleId="Security" />
+  <Module PersistentId="0A64C9A5-8C91-4762-B528-7CD8DBB14DFE" ModuleId="Test" />
+</Modules>

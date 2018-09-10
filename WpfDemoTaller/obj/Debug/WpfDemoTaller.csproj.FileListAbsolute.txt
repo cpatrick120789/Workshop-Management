@@ -1,0 +1,332 @@
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe.config
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\bin\Debug\WpfDemoTaller.pdb
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\App.g.cs
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller_MarkupCompile.cache
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller.g.resources
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller.Properties.Resources.resources
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller.csproj.GenerateResource.Cache
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller.exe
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller.pdb
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\MainWindow.baml
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\MainWindow.g.cs
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\PrimeWindow.baml
+c:\users\denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\PrimeWindow.g.cs
+C:\Users\Denny\documents\visual studio 2013\Projects\WpfDemoTaller\WpfDemoTaller\obj\Debug\WpfDemoTaller.csprojResolveAssemblyReference.cache
+F:\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe.config
+F:\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe
+F:\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.pdb
+F:\Demo\WpfDemoTaller\bin\Debug\Domain.dll
+F:\Demo\WpfDemoTaller\bin\Debug\Entities.dll
+F:\Demo\WpfDemoTaller\bin\Debug\EntityFramework.dll
+F:\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.dll
+F:\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.Linq.dll
+F:\Demo\WpfDemoTaller\bin\Debug\Data.dll
+F:\Demo\WpfDemoTaller\bin\Debug\Security.dll
+F:\Demo\WpfDemoTaller\bin\Debug\Domain.pdb
+F:\Demo\WpfDemoTaller\bin\Debug\Entities.pdb
+F:\Demo\WpfDemoTaller\bin\Debug\Data.pdb
+F:\Demo\WpfDemoTaller\bin\Debug\Security.pdb
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.csprojResolveAssemblyReference.cache
+F:\Demo\WpfDemoTaller\obj\Debug\MainWindow.baml
+F:\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.baml
+F:\Demo\WpfDemoTaller\obj\Debug\MainWindow.g.cs
+F:\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.g.cs
+F:\Demo\WpfDemoTaller\obj\Debug\App.g.cs
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_MarkupCompile.cache
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.g.resources
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.Properties.Resources.resources
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.csproj.GenerateResource.Cache
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.exe
+F:\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.pdb
+F:\Demo\WpfDemoTaller\bin\Debug\DataSource\workshop
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Resources\Videos\LSOFTVIDEO.mp4
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe.config
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.pdb
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Domain.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Entities.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\EntityFramework.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Chart.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Compression.Base.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Core.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Data.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Gauge.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Grid.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridCommon.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridConverter.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Linq.Base.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Olap.Base.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapChart.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapShared.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PropertyGrid.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportControls.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportDesigner.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportViewer.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextBoxAdv.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextRibbon.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfChart.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGrid.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfMaps.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.Wpf.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.WPF.resources.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Spreadsheet.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Tools.WPF.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.Linq.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Data.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Security.dll
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Domain.pdb
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Entities.pdb
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Chart.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Compression.Base.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Data.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Gauge.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Grid.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridCommon.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridConverter.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Linq.Base.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Olap.Base.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapChart.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapShared.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PropertyGrid.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportControls.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportDesigner.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportViewer.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextBoxAdv.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextRibbon.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfChart.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGrid.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfMaps.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.Wpf.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Spreadsheet.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Tools.WPF.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Syncfusion.XlsIO.Base.xml
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Data.pdb
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\Security.pdb
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.csprojResolveAssemblyReference.cache
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\AddMechanic.baml
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\AddProviderWindow.baml
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\MainWindow.baml
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.baml
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\ReportWindow.baml
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\AddMechanic.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\AddProviderWindow.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\MainWindow.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\ReportWindow.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\App.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_Content.g.cs
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_MarkupCompile.cache
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.g.resources
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.exe
+D:\PROJECTS\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.pdb
+D:\PROJECTS\Demo\WpfDemoTaller\bin\Debug\DataSource\workshop
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe.config
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.exe
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.pdb
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\DataSource\workshop
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Resources\Videos\LSOFTVIDEO.mp4
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.pdb
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Domain.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Entities.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\EntityFramework.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.Linq.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Data.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Security.dll
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Domain.pdb
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Entities.pdb
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Data.pdb
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\bin\Debug\Security.pdb
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.csprojResolveAssemblyReference.cache
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\AddMechanic.baml
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\AddProviderWindow.baml
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\MainWindow.baml
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.baml
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\ReportWindow.baml
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\AddMechanic.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\AddProviderWindow.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\MainWindow.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\ReportWindow.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\App.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_Content.g.cs
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_MarkupCompile.cache
+F:\proyectos\ACTUALES\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.g.resources
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Resources\Videos\LSOFTVIDEO.mp4
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe.config
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.exe
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\WpfDemoTaller.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Domain.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Entities.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\EntityFramework.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\System.Data.SQLite.Linq.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Data.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Security.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Domain.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Entities.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Data.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Security.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.csprojResolveAssemblyReference.cache
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\AddMechanic.baml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\AddProviderWindow.baml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\MainWindow.baml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.baml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\ReportWindow.baml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\AddMechanic.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\AddProviderWindow.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\MainWindow.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\PrimeWindow.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\ReportWindow.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\App.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_Content.g.cs
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller_MarkupCompile.cache
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.g.resources
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.exe
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\obj\Debug\WpfDemoTaller.pdb
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Calculate.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Chart.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Compression.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Core.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Data.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Diagram.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.DocIO.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.DocIO.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Edit.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Gantt.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Gauge.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Grid.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridCommon.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridConverter.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Linq.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Maps.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OfficeChart.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Olap.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapChart.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapChartConverter.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapClient.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGauge.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGrid.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGridCommon.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGridConverter.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapShared.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapTools.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Pdf.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PdfViewer.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PivotAnalysis.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PivotAnalysis.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PivotGridConverter.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Presentation.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ProjIO.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PropertyGrid.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportControls.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportDesigner.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportViewer.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportWriter.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextBoxAdv.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextRibbon.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Schedule.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfBarcode.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfBulletGraph.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfBusyIndicator.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfCellGrid.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfChart.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfChromelessWindow.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfColorPalette.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGauge.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGrid.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGridCommon.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfHubTile.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfInput.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfMaps.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfRadialMenu.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfSchedule.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfShared.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfSpreadsheet.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfTreeMap.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfTreeNavigator.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.MVVM.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.WPF.resources.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Spreadsheet.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Tools.WPF.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.XlsIO.Base.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.XlsIO.Wpf.dll
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Calculate.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Chart.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Compression.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Data.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Diagram.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.DocIO.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.DocIO.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Edit.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Gantt.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Gauge.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Grid.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridCommon.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.GridConverter.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Linq.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Maps.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OfficeChart.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Olap.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapChart.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapChartConverter.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapClient.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGauge.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGrid.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGridCommon.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapGridConverter.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapShared.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.OlapTools.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Pdf.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PdfViewer.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PivotAnalysis.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PivotAnalysis.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PivotGridConverter.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Presentation.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ProjIO.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.PropertyGrid.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportControls.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportDesigner.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportViewer.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.ReportWriter.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextBoxAdv.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.RichTextRibbon.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Schedule.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfBarcode.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfBulletGraph.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfBusyIndicator.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfCellGrid.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfChart.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfChromelessWindow.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfColorPalette.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGauge.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGrid.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGridCommon.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfHubTile.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfInput.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfMaps.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfRadialMenu.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfSchedule.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfShared.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfSpreadsheet.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfTreeMap.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.SfTreeNavigator.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.MVVM.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Shared.Wpf.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Spreadsheet.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.Tools.WPF.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.XlsIO.Base.xml
+E:\web development works\Gestion de Taller (Aplicacion Desktop)\Demo Solutions\Demo\Demo\WpfDemoTaller\bin\Debug\Syncfusion.XlsIO.Wpf.xml

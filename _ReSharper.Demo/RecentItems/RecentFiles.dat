@@ -1,0 +1,65 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/f:Model.Context.cs" caret="607" fromTop="15" />
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/f:workshopEntities.cs" caret="183" fromTop="8" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Paginacion.cs" caret="35" fromTop="2" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:ProviderAccessory.cs" caret="89" fromTop="5" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Client.cs" caret="71" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Provider.cs" caret="80" fromTop="5" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:RepairAccessory.cs" caret="71" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Repair.cs" caret="71" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Service.cs" caret="72" fromTop="4" />
+    <File id="4C55F212-45AE-4CAA-93C1-FE7C526DC05C/f:Criptografia.cs" caret="1607" fromTop="14" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Mechanic.cs" caret="0" fromTop="0" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/f:Model.tt" caret="0" fromTop="0" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Accessory.cs" caret="0" fromTop="0" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Rol.cs" caret="119" fromTop="7" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:User.cs" caret="228" fromTop="9" />
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/f:App.Config" caret="0" fromTop="0" />
+    <File id="0A64C9A5-8C91-4762-B528-7CD8DBB14DFE/f:App.config" caret="389" fromTop="6" />
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/d:Repositories/f:GenericRepository.cs" caret="2501" fromTop="13" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:RepairManager.cs" caret="0" fromTop="0" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:AccessoryManager.cs" caret="0" fromTop="0" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:ClientManager.cs" caret="0" fromTop="0" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:UserManager.cs" caret="972" fromTop="13" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:ProviderManager.cs" caret="0" fromTop="0" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:MechanicManager.cs" caret="0" fromTop="0" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:GenericManager.cs" caret="3906" fromTop="19" />
+    <File id="4C55F212-45AE-4CAA-93C1-FE7C526DC05C/f:RegistryManager.cs" caret="578" fromTop="11" />
+    <File id="4C55F212-45AE-4CAA-93C1-FE7C526DC05C/f:License.cs" caret="1292" fromTop="10" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:Manager.cs" caret="931" fromTop="10" />
+    <File id="0A64C9A5-8C91-4762-B528-7CD8DBB14DFE/f:Program.cs" caret="164" fromTop="5" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/d:Contracts/f:IRepository.cs" caret="679" fromTop="16" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:GenericManager.cs" caret="3177" fromTop="10" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:ServiceManager.cs" caret="461" fromTop="18" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:ProviderAccessoryManager.cs" caret="382" fromTop="13" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:RepairAccessoryManager.cs" caret="374" fromTop="13" />
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/f:workshopEntities.cs" caret="245" fromTop="10" />
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/f:App.Config" caret="15563" fromTop="7" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Client.cs" caret="71" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Mechanic.cs" caret="73" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Accessory.cs" caret="0" fromTop="0" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:ProviderAccessory.cs" caret="73" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Provider.cs" caret="73" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:RepairAccessory.cs" caret="71" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Repair.cs" caret="71" fromTop="4" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Service.cs" caret="72" fromTop="4" />
+    <File id="4C55F212-45AE-4CAA-93C1-FE7C526DC05C/f:Criptografia.cs" caret="1607" fromTop="44" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:Rol.cs" caret="119" fromTop="7" />
+    <File id="CEAD49FC-D034-47F2-8D87-9F27C83151B7/d:Parciales/f:User.cs" caret="228" fromTop="9" />
+    <File id="4EC61458-9096-4281-A3B3-1CCA0A34CB4E/d:Repositories/f:GenericRepository.cs" caret="15562" fromTop="8" />
+    <File id="0A64C9A5-8C91-4762-B528-7CD8DBB14DFE/f:App.config" caret="389" fromTop="6" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:AccessoryManager.cs" caret="717" fromTop="19" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:ClientManager.cs" caret="683" fromTop="12" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:RepairManager.cs" caret="694" fromTop="12" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:MechanicManager.cs" caret="1004" fromTop="17" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:ProviderManager.cs" caret="894" fromTop="13" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:UserManager.cs" caret="913" fromTop="12" />
+    <File id="4C55F212-45AE-4CAA-93C1-FE7C526DC05C/f:RegistryManager.cs" caret="578" fromTop="11" />
+    <File id="4C55F212-45AE-4CAA-93C1-FE7C526DC05C/f:License.cs" caret="1292" fromTop="10" />
+    <File id="BB33A2D1-E4F8-45CD-BBE7-43BB4C045FA6/d:Managers/f:Manager.cs" caret="930" fromTop="10" />
+    <File id="0A64C9A5-8C91-4762-B528-7CD8DBB14DFE/f:Program.cs" caret="242" fromTop="9" />
+  </RecentEdits>
+</RecentFiles>

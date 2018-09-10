@@ -1,0 +1,972 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Name="PrimeWindows" x:Class="WpfDemoTaller.PrimeWindow"
+        Title="PrimeWindow" Height="560" Width="1165" WindowStartupLocation="CenterScreen" WindowState="Maximized"  WindowStyle="None" ResizeMode="NoResize" Background="White" Icon="Resources/Images/LSoft.ico">
+
+    <Window.Resources>
+
+        <Style x:Key="GridHeaderCellControlStyle1" TargetType="{x:Type syncfusion:GridHeaderCellControl}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="5,3"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Foreground" Value="#A8CF45"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="syncfusion:VisualContainer.WantsMouseInput" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type syncfusion:GridHeaderCellControl}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="HiddenColumnsResizingStates">
+                                    <VisualState x:Name="PreviousColumnHidden">
+                                        <Storyboard>
+                                            <ThicknessAnimationUsingKeyFrames BeginTime="0" Duration="1.0:0:0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="PART_HeaderCellBorder">
+                                                <EasingThicknessKeyFrame KeyTime="0" Value="3,0,1,1"/>
+                                            </ThicknessAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="HiddenState">
+                                        <Storyboard>
+                                            <ThicknessAnimationUsingKeyFrames BeginTime="0" Duration="1.0:0:0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="PART_HeaderCellBorder">
+                                                <EasingThicknessKeyFrame KeyTime="0" Value="3,0,3,1"/>
+                                            </ThicknessAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="NormalState"/>
+                                    <VisualState x:Name="LastColumnHidden">
+                                        <Storyboard>
+                                            <ThicknessAnimationUsingKeyFrames BeginTime="0" Duration="1.0:0:0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="PART_HeaderCellBorder">
+                                                <EasingThicknessKeyFrame KeyTime="0" Value="0,0,3,1"/>
+                                            </ThicknessAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Normal"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="BorderStates">
+                                    <VisualState x:Name="NormalCell"/>
+                                    <VisualState x:Name="FooterColumnCell">
+                                        <Storyboard BeginTime="0">
+                                            <ThicknessAnimationUsingKeyFrames BeginTime="0" Duration="1.0:0:0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="PART_FooterCellBorder">
+                                                <EasingThicknessKeyFrame KeyTime="0" Value="1,0,1,1"/>
+                                            </ThicknessAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="BeforeFooterColumnCell">
+                                        <Storyboard BeginTime="0">
+                                            <ThicknessAnimationUsingKeyFrames BeginTime="0" Duration="1.0:0:0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="PART_FooterCellBorder">
+                                                <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,1"/>
+                                            </ThicknessAnimationUsingKeyFrames>
+                                            <ThicknessAnimationUsingKeyFrames BeginTime="0" Duration="1.0:0:0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="PART_HeaderCellBorder">
+                                                <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,1"/>
+                                            </ThicknessAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="PART_FooterCellBorder" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"/>
+                            <Border x:Name="PART_HeaderCellBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                <Grid Margin="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="Center"/>
+                                    <Grid x:Name="PART_SortButtonPresenter" Grid.Column="1" SnapsToDevicePixels="True">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0">
+                                                <ColumnDefinition.MinWidth>
+                                                    <Binding Mode="OneWay" Path="SortDirection" RelativeSource="{RelativeSource TemplatedParent}">
+                                                        <Binding.Converter>
+                                                            <syncfusion:SortDirectionToWidthConverter/>
+                                                        </Binding.Converter>
+                                                    </Binding>
+                                                </ColumnDefinition.MinWidth>
+                                            </ColumnDefinition>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Path Data="F1M753.644,-13.0589L753.736,-12.9639 753.557,-12.7816 732.137,8.63641 732.137,29.7119 756.445,5.40851 764.094,-2.24384 764.275,-2.42352 771.834,5.1286 796.137,29.4372 796.137,8.36163 774.722,-13.0589 764.181,-23.5967 753.644,-13.0589z" Fill="Gray" HorizontalAlignment="Center" Height="8.138" Stretch="Fill" SnapsToDevicePixels="True" VerticalAlignment="Center" Width="8.938">
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <RotateTransform Angle="0"/>
+                                                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                            <Path.Visibility>
+                                                <Binding ConverterParameter="Ascending" Path="SortDirection" RelativeSource="{RelativeSource TemplatedParent}">
+
+                                                </Binding>
+                                            </Path.Visibility>
+                                        </Path>
+                                        <Path Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z" Fill="Gray" HorizontalAlignment="Center" Height="8.138" Stretch="Fill" SnapsToDevicePixels="True" VerticalAlignment="Center" Width="8.938">
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <RotateTransform Angle="0"/>
+                                                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                            <Path.Visibility>
+                                                <Binding ConverterParameter="Decending" Path="SortDirection" RelativeSource="{RelativeSource TemplatedParent}">
+
+                                                </Binding>
+                                            </Path.Visibility>
+                                        </Path>
+                                        <TextBlock Grid.Column="1" Foreground="{TemplateBinding Foreground}" FontSize="10" Margin="0,-4,0,0" SnapsToDevicePixels="True" Text="{TemplateBinding SortNumber}" Visibility="{TemplateBinding SortNumberVisibility}" VerticalAlignment="Center"/>
+                                    </Grid>
+                                    <syncfusion:FilterToggleButton x:Name="PART_FilterToggleButton" Grid.Column="2" HorizontalAlignment="Stretch" SnapsToDevicePixels="True" Visibility="{TemplateBinding FilterIconVisiblity}" VerticalAlignment="Stretch">
+                                        <syncfusion:FilterToggleButton.Foreground >
+                                            <SolidColorBrush Color="#A8CF45"/>
+                                        </syncfusion:FilterToggleButton.Foreground>
+                                    </syncfusion:FilterToggleButton>
+                                    <Border x:Name="PART_FilterPopUpPresenter"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="Resources/Images/Icono Salir Sobre.png" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="Resources/Images/PDF 2.png">
+                                            
+                                        </ImageBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle3" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="Resources/Images/exel 1.png">
+
+                                        </ImageBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="Resources/Images/Bar-Chart2.png" Stretch="None">
+                                        </ImageBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <LinearGradientBrush x:Key="TabItem.Static.Background" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#F0F0F0" Offset="0.0"/>
+            <GradientStop Color="#E5E5E5" Offset="1.0"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="TabItem.Static.Border" Color="#ACACAC"/>
+        <LinearGradientBrush x:Key="TabItem.MouseOver.Background" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#ECF4FC" Offset="0.0"/>
+            <GradientStop Color="#DCECFC" Offset="1.0"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="#7EB4EA"/>
+        <SolidColorBrush x:Key="TabItem.Disabled.Background" Color="#F0F0F0"/>
+        <SolidColorBrush x:Key="TabItem.Disabled.Border" Color="#D9D9D9"/>
+        <SolidColorBrush x:Key="TabItem.Selected.Border" Color="#ACACAC"/>
+        <SolidColorBrush x:Key="TabItem.Selected.Background" Color="#A8CF45"/>
+        <Style x:Key="TabItemStyle1" TargetType="{x:Type TabItem}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Foreground" Value="#A8CF45"/>
+            <Setter Property="Background" Value="{StaticResource TabItem.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TabItem.Static.Border}"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Padding" Value="6,2,6,2"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
+                            <Border x:Name="mainBorder" BorderBrush="{TemplateBinding BorderBrush}"  BorderThickness="1,1,1,0" Background="{TemplateBinding Background}" Margin="0">
+                                <Border x:Name="innerBorder" BorderBrush="{StaticResource TabItem.Selected.Border}" BorderThickness="1,1,1,0" Background="{StaticResource TabItem.Selected.Background}"  Margin="-1" Opacity="0">
+
+                                </Border>
+
+                            </Border>
+                            <ContentPresenter x:Name="contentPresenter"  ContentSource="Header" Focusable="False"
+                                              HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" 
+                                              Margin="{TemplateBinding Padding}" 
+                                              RecognizesAccessKey="True" 
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                              VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+                                              >
+                            </ContentPresenter>
+
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Left"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Background" TargetName="mainBorder" Value="#FFF"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,0,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,0,1"/>
+
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Bottom"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
+
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Right"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,1,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,1,1,1"/>
+
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.MouseOver.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,1,0"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
+
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Left"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,0,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,0,1"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Bottom"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Right"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,1,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,1,1,1"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
+                                <Setter Property="Background" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="mainBorder" Value="{StaticResource TabItem.Disabled.Border}"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,1,0"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Left"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,0,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,0,1"/>
+
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Left"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Panel.ZIndex" Value="1"/>
+                                <Setter Property="Margin" Value="-2,-2,0,-2"/>
+                                <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,0,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,0,1"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+
+
+
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Bottom"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Bottom"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Panel.ZIndex" Value="1"/>
+                                <Setter Property="Margin" Value="-2,0,-2,-2"/>
+                                <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Right"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,1,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,1,1,1"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Right"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Panel.ZIndex" Value="1"/>
+                                <Setter Property="Margin" Value="0,-2,-2,-2"/>
+                                <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,1,1,1"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,1,1,1"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,1,0"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+                            </MultiDataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="Panel.ZIndex" Value="1"/>
+                                <Setter Property="Margin" Value="-2,-2,-2,0"/>
+                                <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                                <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,1,0"/>
+                                <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#FFFFFF"/>
+                            </MultiDataTrigger>
+
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                    <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top"/>
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="#A8CF45"/>
+                            </MultiDataTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid x:Name="GirdContainer" Margin="0,0,-0.2,0" Background="Black">
+
+        <TabControl Margin="60,135,65,71" Background="{x:Null}" VerticalContentAlignment="Center" BorderThickness="0" BorderBrush="Transparent" Foreground="#FFD6D6D6" FontWeight="SemiBold" SelectionChanged="TabControl_SelectionChanged">
+
+            <TabItem x:Name="TabUser"  Header="USUARIOS" Width="120" Height="40" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D" FontWeight="Bold" Style="{DynamicResource TabItemStyle1}" FontSize="14">
+                <Grid OverridesDefaultStyle="True" Margin="0,-57,-1,-86.8" >
+                    <syncfusion:SfDataGrid x:Name="UserDataGrid" BorderBrush="Transparent" Margin="0,103,0,83" Background="#FF606062" AllowResizingColumns="True" AddNewRowPosition="Top" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="True" RecordDeleting="UserDataGrid_RecordDeleting" Foreground="White" AllowDraggingColumns="True" AllowEditing="True" GridValidationMode="InEdit" RowValidating="UserDataGrid_RowValidating" RowValidated="UserDataGrid_RowValidated" ColumnSizer="Star" HeaderRowHeight="48" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" RowHeight="50" BorderThickness="0" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal"  >
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridNumericColumn Padding="5"  HeaderText="ID"  MappingName="Id" IsHidden="True" ColumnSizer="Star" >
+                                
+                            </syncfusion:GridNumericColumn>
+                            <syncfusion:GridImageColumn Padding="10"  HeaderText="" Width="50" MaximumWidth="50" AllowFiltering="False" AllowGrouping="False" AllowSorting="False" MappingName="Image" ColumnSizer="Auto" AllowResizing="True" TextAlignment="Center"/>
+                            <syncfusion:GridTextColumn Padding="5"  HeaderText="Nombre de Usuario" MappingName="Username" />
+                            <syncfusion:GridTextColumn Padding="5"  HeaderText="Nombre" MappingName="Name"   />
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Apellidos" MappingName="LastName"   />
+                            <syncfusion:GridComboBoxColumn Padding="5" HeaderText="Rol"  MappingName="RolEnum" ItemsSource="{Binding Roles}" IsEditable="True"/>
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Clave" MappingName="Password" AllowEditing="False"/>
+                            <!--                            <syncfusion:GridTemplateColumn AllowSorting="False" MaximumWidth="100" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">-->
+                            <!--                                <syncfusion:GridTemplateColumn.CellTemplate>-->
+                            <!--                                    <DataTemplate>-->
+                            <!--                                        <Grid>-->
+                            <!--                                            <Button Click="ButtonBase_OnClick" Margin="10" Content="Eliminar" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>-->
+                            <!--                                        </Grid>-->
+                            <!--                                    </DataTemplate>-->
+                            <!--                                </syncfusion:GridTemplateColumn.CellTemplate>-->
+                            <!---->
+<!--                                <syncfusion:GridTemplateColumn.EditTemplate>-->
+                            <!--                                    <DataTemplate/>-->
+                            <!--                                </syncfusion:GridTemplateColumn.EditTemplate>-->
+                            <!---->
+<!--                            </syncfusion:GridTemplateColumn>-->
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabService" Header="SERVICIOS" Width="120" Height="40" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D" FontWeight="Bold" Margin="0" Style="{DynamicResource TabItemStyle1}" FontSize="14">
+                <Grid Margin="0,0,-2,-9">
+                    <syncfusion:SfDataGrid x:Name="ServiceDataGrid" Margin="0,49,0,19" Background="#FF606062" AllowResizingColumns="True" AddNewRowPosition="Top" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="False" RowHeight="32" Foreground="#FFFFFF" AllowDraggingColumns="True" AllowEditing="True" GridValidationMode="InEdit"  ColumnSizer="Star" HeaderRowHeight="45" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" RecordDeleting="ServiceDataGrid_RecordDeleting" RowValidated="ServiceDataGrid_RowValidated" RowValidating="ServiceDataGrid_RowValidating" AllowSorting="False" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal">
+
+                        <syncfusion:SfDataGrid.DetailsViewDefinition>
+                            <syncfusion:GridViewDefinition RelationalColumn="Mechanic" >
+                                <syncfusion:GridViewDefinition.DataGrid >
+                                    <syncfusion:SfDataGrid x:Name="DetailsViewRepairMechanic" syncfusion:AddNewRowPosition="Top"  ItemsSource="{Binding Mechanic}" RowHeight="30" AllowResizingColumns="True" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="True"  Foreground="White" AllowDraggingColumns="True" AllowEditing="True" GridValidationMode="InEdit"  ColumnSizer="Star" HeaderRowHeight="28" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" Background="#FFD1F0AF" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" CurrentCellBorderBrush="#FF7B9A2C">
+                                        <syncfusion:SfDataGrid.StackedHeaderRows>
+                                            <syncfusion:StackedHeaderRow>
+                                                <syncfusion:StackedHeaderRow.StackedColumns>
+                                                    <syncfusion:StackedColumn ChildColumns="Id,Name,LastName,Code,Image,btn" HeaderText="Mecanicos" />
+                                                </syncfusion:StackedHeaderRow.StackedColumns>
+                                            </syncfusion:StackedHeaderRow>
+                                        </syncfusion:SfDataGrid.StackedHeaderRows>
+
+
+                                        <syncfusion:SfDataGrid.Columns>
+                                            <syncfusion:GridImageColumn Padding="5" AllowFiltering="False" AllowEditing="False" MaximumWidth="30" MappingName="Image" HeaderText="" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Id" IsHidden="True" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Name" HeaderText="Nombre" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="LastName" HeaderText="Apellidos" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Code" HeaderText="Código" />
+                                            <syncfusion:GridTemplateColumn Padding="5" AllowSorting="False" MaximumWidth="100" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="btn">
+                                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <Grid>
+                                                            <Button DataContext="{Binding}" Name="BtnMechanicServiceRemove" Click="BtnMechanicServiceRemove_OnClick"  Margin="2" Panel.ZIndex="999999" Background="#FFA8CF45" Foreground="#FF5D5D5D">
+                                                                <StackPanel>
+                                                                    <TextBlock>Eliminar</TextBlock>
+                                                                    <TextBlock Visibility="Hidden" DataContext="{Binding CurrentItem, ElementName=ServiceDataGrid}"></TextBlock>
+                                                                </StackPanel>
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </syncfusion:GridTemplateColumn.CellTemplate>
+                                            </syncfusion:GridTemplateColumn>
+                                        </syncfusion:SfDataGrid.Columns>
+                                    </syncfusion:SfDataGrid>
+
+                                </syncfusion:GridViewDefinition.DataGrid>
+                            </syncfusion:GridViewDefinition>
+                        </syncfusion:SfDataGrid.DetailsViewDefinition>
+
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridTextColumn Padding="5" ColumnFilter="Value"  FilterBehavior="StronglyTyped" HeaderText="Nombre" MappingName="Name" />
+                            <syncfusion:GridCurrencyColumn Padding="5" CurrencySymbol="$" ColumnFilter="Value"  FilterBehavior="StronglyTyped" HeaderText="Precio" MappingName="Price" TextAlignment="Right" />
+
+                            <syncfusion:GridTemplateColumn AllowSorting="False" MaximumWidth="150" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Click="BtnMechanicAdd_Click" Name="BtnMechanicAdd" Margin="6 2" Content="Agregar Mecánico" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+                            </syncfusion:GridTemplateColumn>
+
+                            <!--<syncfusion:GridTemplateColumn AllowSorting="False" MaximumWidth="100" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Name="BtnServiceRemove" Click="BtnServiceRemove_OnClick"  Margin="6 2" Content="Eliminar" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+                            </syncfusion:GridTemplateColumn>-->
+
+
+
+                        </syncfusion:SfDataGrid.Columns>
+
+
+                    </syncfusion:SfDataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabClients" Header="CLIENTES" Width="120" Height="40" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D"  Style="{DynamicResource TabItemStyle1}" FontSize="14" FontWeight="Bold">
+                <Grid Margin="0,0,0,-8.6">
+                    <syncfusion:SfDataGrid x:Name="ClientsDataGrid" Margin="0,49,-0.6,18" Background="#FF606062" AllowResizingColumns="True" AddNewRowPosition="Top" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="False" Foreground="White" AllowDraggingColumns="True" AllowEditing="True" AllowSorting="False" GridValidationMode="InEdit"  ColumnSizer="Star" HeaderRowHeight="48" RowHoverHighlightingBrush="#FFA8CF45" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" RecordDeleting="ClientsDataGrid_RecordDeleting" RowValidating="ClientsDataGrid_RowValidating" RowValidated="ClientsDataGrid_RowValidated" RowHeight="32" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal">
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridNumericColumn Padding="5" HeaderText="ID"  MappingName="Id" IsHidden="True" ColumnSizer="Star" />
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Nombre" MappingName="Name"   />
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Apellidos" MappingName="LastName"   />
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Código" MappingName="Code"/>
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Identificación" MappingName="Identification"/>
+                            <!--                            <syncfusion:GridTemplateColumn MaximumWidth="100" AllowSorting="False" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">-->
+                            <!--                                <syncfusion:GridTemplateColumn.CellTemplate>-->
+                            <!--                                    <DataTemplate>-->
+                            <!--                                        <Grid>-->
+                            <!--                                            <Button x:Name="BtnRemoveClient" Margin="6 2" Content="Eliminar" DataContext="{Binding}" Click="BtnRemoveClient_OnClick" Background="#FFA8CF45" Foreground="#FF5D5D5D" />-->
+                            <!--                                        </Grid>-->
+                            <!--                                    </DataTemplate>-->
+                            <!--                                </syncfusion:GridTemplateColumn.CellTemplate>-->
+                            <!--                                <syncfusion:GridTemplateColumn.EditTemplate>-->
+                            <!--                                    <DataTemplate/>-->
+                            <!--                                </syncfusion:GridTemplateColumn.EditTemplate>-->
+                            <!--                            </syncfusion:GridTemplateColumn>-->
+                        </syncfusion:SfDataGrid.Columns>
+
+                        <syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+                            <ContextMenu/>
+                        </syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+                    </syncfusion:SfDataGrid>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabProveedores" Header="PROVEEDORES" Width="120" Height="40" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D" FontWeight="Bold"  Style="{DynamicResource TabItemStyle1}" FontSize="14">
+                <Grid Margin="0,0,0,-8.8">
+                    <syncfusion:SfDataGrid x:Name="ProviderDataGrid" Margin="0,49,0,9" Background="#FF606062" AllowResizingColumns="True" AddNewRowPosition="Top" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="False"  Foreground="#FFFFFF" AllowDraggingColumns="True" AllowEditing="True" AllowSorting="False" GridValidationMode="InEdit"  ColumnSizer="Star" HeaderRowHeight="45" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" RecordDeleting="ProviderDataGrid_RecordDeleting" RowValidating="ProviderDataGrid_RowValidating" RowValidated="ProviderDataGrid_RowValidated" RowHeight="32" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal">
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridNumericColumn Padding="5" HeaderText="ID"  MappingName="Id" IsHidden="True" ColumnSizer="Star" ></syncfusion:GridNumericColumn>
+                            <syncfusion:GridImageColumn Padding="5" HeaderText="" Width="50" MaximumWidth="50" AllowFiltering="False" AllowGrouping="False" AllowSorting="False" MappingName="Image" ColumnSizer="Auto" AllowResizing="True" TextAlignment="Center"/>
+                            <syncfusion:GridTextColumn Padding="5" ColumnFilter="Value" DisplayBinding="{x:Null}" FilterBehavior="StronglyTyped" HeaderText="Nombre" MappingName="Name" ValueBinding="{x:Null}"/>
+                            <!--<syncfusion:GridTemplateColumn Width="100" MaximumWidth="100" AllowSorting="False" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                -->
+                            <!--<syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Name="BtnProvider" Margin="6 2" Click="BtnProvider_OnClick"  Content="Eliminar" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>-->
+                            <!--
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+
+                            </syncfusion:GridTemplateColumn>-->
+
+                        </syncfusion:SfDataGrid.Columns>
+
+                    </syncfusion:SfDataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabMechanic" Header="MECANICOS" Width="120" Height="40" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D" FontWeight="Bold"  Style="{DynamicResource TabItemStyle1}" FontSize="14">
+                <Grid Margin="0,13,-12,17.2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <syncfusion:SfDataGrid x:Name="MechanicDataGrid" Background="#FF606062" AllowResizingColumns="True" AddNewRowPosition="Top" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="False"  Foreground="#FFFFFF" AllowDraggingColumns="True" AllowEditing="True" AllowSorting="False"  ColumnSizer="Star" HeaderRowHeight="45" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" Margin="0,37,10,0" RowHeight="50" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" RecordDeleting="MechanicDataGrid_RecordDeleting" RowValidated="MechanicDataGrid_RowValidated" RowValidating="MechanicDataGrid_RowValidating" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal" >
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridNumericColumn Padding="5" HeaderText="ID"  MappingName="Id" IsHidden="True" ColumnSizer="Star" ></syncfusion:GridNumericColumn>
+                            <syncfusion:GridImageColumn  Padding="10"  HeaderText="" Width="50" MaximumWidth="50" AllowFiltering="False" AllowGrouping="False" AllowSorting="False" MappingName="Image" ColumnSizer="Auto" AllowResizing="True" TextAlignment="Center"/>
+                            <syncfusion:GridTextColumn Padding="5" ColumnFilter="Value" FilterBehavior="StronglyTyped" HeaderText="Nombre" MappingName="Name" />
+                            <syncfusion:GridTextColumn Padding="5" ColumnFilter="Value" FilterBehavior="StronglyTyped" HeaderText="Apellidos" MappingName="LastName" />
+                            <syncfusion:GridTextColumn Padding="5" ColumnFilter="Value" FilterBehavior="StronglyTyped" HeaderText="Código" MappingName="Code" />
+
+                            <!--<syncfusion:GridTemplateColumn  Width="100" MaximumWidth="100" AllowSorting="False" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                -->
+                            <!--<syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Name="BtnMechanicRemove" Click="BtnMechanicRemove_OnClick" Margin="10"  Content="Eliminar" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>-->
+                            <!--
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+
+                            </syncfusion:GridTemplateColumn>-->
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabAccesories" Header="ACCESORIOS" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D" FontWeight="Bold"  Style="{DynamicResource TabItemStyle1}" Margin="0,0,-50.4,1" FontSize="14">
+                <Grid Margin="0,0,0,-8.6">
+                    <syncfusion:SfDataGrid x:Name="AccesoriesDataGrid" Margin="0,49,0.4,9.4" Background="#FF606062" AllowResizingColumns="True" AddNewRowPosition="Top" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="False" Foreground="#FFFFFF" AllowDraggingColumns="True" AllowEditing="True" AllowSorting="False" GridValidationMode="InEdit" ColumnSizer="Star" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" HeaderRowHeight="48" RecordDeleting="AccesoriesDataGrid_RecordDeleting" RowValidated="AccesoriesDataGrid_RowValidated" RowValidating="AccesoriesDataGrid_RowValidating" RowHeight="32" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" Padding="5" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal">
+
+                        <syncfusion:SfDataGrid.DetailsViewDefinition>
+                            <syncfusion:GridViewDefinition RelationalColumn="ProviderAccessory" >
+                                <syncfusion:GridViewDefinition.DataGrid>
+                                    <syncfusion:SfDataGrid x:Name="DetailsAccesoryView" AutoGenerateColumns="False"  ColumnSizer="Star" RowHeight="30">
+
+                                        <syncfusion:SfDataGrid.StackedHeaderRows>
+                                            <syncfusion:StackedHeaderRow>
+                                                <syncfusion:StackedHeaderRow.StackedColumns>
+                                                    <syncfusion:StackedColumn ChildColumns="Id,Provider.Name,Amount,Date" HeaderText="Proveedores" />
+                                                </syncfusion:StackedHeaderRow.StackedColumns>
+                                            </syncfusion:StackedHeaderRow>
+                                        </syncfusion:SfDataGrid.StackedHeaderRows>
+
+                                        <syncfusion:SfDataGrid.Columns>
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Id" IsHidden="True" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Provider.Name" HeaderText="Proveedor" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Amount" HeaderText="Cantidad" />
+                                            <syncfusion:GridDateTimeColumn Padding="5" MappingName="Date" HeaderText="Fecha" />
+                                        </syncfusion:SfDataGrid.Columns>
+                                    </syncfusion:SfDataGrid>
+
+                                </syncfusion:GridViewDefinition.DataGrid>
+                            </syncfusion:GridViewDefinition>
+                        </syncfusion:SfDataGrid.DetailsViewDefinition>
+
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridNumericColumn Padding="5" HeaderText="ID"  MappingName="Id" IsHidden="True" ColumnSizer="Star" ></syncfusion:GridNumericColumn>
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Nombre" MappingName="Name"   />
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Código" MappingName="Code"   />
+                            <syncfusion:GridCurrencyColumn Padding="5" HeaderText="Precio" MappingName="Price" CurrencySymbol="$" />
+                            <syncfusion:GridNumericColumn Padding="5" HeaderText="Cantidad" MappingName="Amount"/>
+                            <syncfusion:GridTextColumn Padding="5" HeaderText="Descripción" MappingName="Description"   />
+
+                            <syncfusion:GridTemplateColumn Padding="5" HeaderText="Cantidad de Reparaciones" MappingName="Cantidad">
+                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock FontStyle="Italic" FontWeight="SemiBold" Padding="2,0" Text="{Binding RepairAccessory.Count}" />
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate>
+
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+                            </syncfusion:GridTemplateColumn>
+
+                            <syncfusion:GridTemplateColumn AllowSorting="False" MaximumWidth="140" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Name="BtnAddProvider" Margin="6 2" Click="BtnAddProvider_OnClick" Content="Agregar Cantidad" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+                            </syncfusion:GridTemplateColumn>
+
+                            <!--<syncfusion:GridTemplateColumn AllowSorting="False" MaximumWidth="100" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Name="BtnAccesoryRemove" Margin="6 2" Click="BtnAccesoryRemove_OnClick" Content="Eliminar" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"></Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+                            </syncfusion:GridTemplateColumn>-->
+
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabRefractions" Header="REFACCIONES" Width="120" Background="#FF3D3B3B" BorderBrush="#FF565656" Foreground="#FFC6E12D" FontWeight="Bold"  Style="{DynamicResource TabItemStyle1}" Margin="50.4,0,-50.4,1" FontSize="14">
+                <Grid Margin="0,0,0,-8.6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="83*"/>
+                        <ColumnDefinition Width="793*"/>
+                    </Grid.ColumnDefinitions>
+                    <syncfusion:SfDataGrid x:Name="RepairDataGrid" Margin="0,49,0,17.6" Background="#FF606062" AllowResizingColumns="True"   AutoGenerateColumns="False" AllowFiltering="True"  Foreground="#FFFFFF" AllowDraggingColumns="True"  GridValidationMode="InEdit"   ColumnSizer="Star" HeaderRowHeight="48" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#FFA8CF45" RowHeight="50" Grid.ColumnSpan="2" HeaderStyle="{DynamicResource GridHeaderCellControlStyle1}" FontSize="14" CurrentCellBorderBrush="#FF5A6D19" FontWeight="Normal">
+
+                        <syncfusion:SfDataGrid.DetailsViewDefinition>
+                            <syncfusion:GridViewDefinition RelationalColumn="RepairAccessory" >
+                                <syncfusion:GridViewDefinition.DataGrid >
+                                    <syncfusion:SfDataGrid x:Name="DetailsViewRepair" syncfusion:AddNewRowPosition="Top"  ItemsSource="{Binding RepairAccessory}" RowHeight="30" AllowResizingColumns="True" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="True"  Foreground="#FF525252" AllowDraggingColumns="True" AllowEditing="True" GridValidationMode="InEdit"  ColumnSizer="Star" HeaderRowHeight="28" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#64B7E220" Background="#FFD1F0AF">
+
+                                        <syncfusion:SfDataGrid.StackedHeaderRows>
+                                            <syncfusion:StackedHeaderRow>
+                                                <syncfusion:StackedHeaderRow.StackedColumns>
+                                                    <syncfusion:StackedColumn ChildColumns="Id,Accessory.Name,Amount," HeaderText="Accesorios de Reparación" />
+                                                </syncfusion:StackedHeaderRow.StackedColumns>
+                                            </syncfusion:StackedHeaderRow>
+                                        </syncfusion:SfDataGrid.StackedHeaderRows>
+
+                                        <syncfusion:SfDataGrid.Columns>
+                                            <syncfusion:GridImageColumn Padding="5"  AllowEditing="False" AllowFiltering="False" AllowSorting="False"  AllowGrouping="False" MaximumWidth="30" MappingName="Image" HeaderText="" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Id" IsHidden="True" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Accessory.Name" HeaderText="Accesorio" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Amount" HeaderText="Cantidad" />
+                                        </syncfusion:SfDataGrid.Columns>
+                                    </syncfusion:SfDataGrid>
+
+                                </syncfusion:GridViewDefinition.DataGrid>
+                            </syncfusion:GridViewDefinition>
+
+                            <syncfusion:GridViewDefinition RelationalColumn="Mechanic" >
+                                <syncfusion:GridViewDefinition.DataGrid >
+                                    <syncfusion:SfDataGrid x:Name="DetailsView" syncfusion:AddNewRowPosition="Top"  ItemsSource="{Binding Mechanic}" RowHeight="30" AllowResizingColumns="True" AllowDeleting="True"  AutoGenerateColumns="False" AllowFiltering="True"  Foreground="#FF525252" AllowDraggingColumns="True" AllowEditing="True" GridValidationMode="InEdit"  ColumnSizer="Star" HeaderRowHeight="28" RowHoverHighlightingBrush="#FFC5E164" GroupRowSelectionBrush="#64B5EF41" RowSelectionBrush="#64B7E220" Background="#FFD1F0AF">
+
+                                        <syncfusion:SfDataGrid.StackedHeaderRows>
+                                            <syncfusion:StackedHeaderRow>
+                                                <syncfusion:StackedHeaderRow.StackedColumns>
+                                                    <syncfusion:StackedColumn ChildColumns="Id,Name,LastName,Code,Image,btn" HeaderText="Mecanicos" />
+                                                </syncfusion:StackedHeaderRow.StackedColumns>
+                                            </syncfusion:StackedHeaderRow>
+                                        </syncfusion:SfDataGrid.StackedHeaderRows>
+
+
+                                        <syncfusion:SfDataGrid.Columns>
+                                            <syncfusion:GridImageColumn Padding="5" MaximumWidth="30" MappingName="Image" HeaderText="" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Id" IsHidden="True" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Name" HeaderText="Nombre" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="LastName" HeaderText="Apellidos" />
+                                            <syncfusion:GridTextColumn Padding="5" MappingName="Code" HeaderText="Código" />
+
+                                        </syncfusion:SfDataGrid.Columns>
+                                    </syncfusion:SfDataGrid>
+
+                                </syncfusion:GridViewDefinition.DataGrid>
+                            </syncfusion:GridViewDefinition>
+
+
+                        </syncfusion:SfDataGrid.DetailsViewDefinition>
+
+
+
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridNumericColumn HeaderText="ID"  MappingName="Id" IsHidden="True" ColumnSizer="Star" />
+                            <syncfusion:GridTextColumn HeaderText="Cliente" MappingName="Client.Name" />
+                            <syncfusion:GridTextColumn HeaderText="Servicio" MappingName="Service.Name"   />
+                            <syncfusion:GridTextColumn HeaderText="Código" MappingName="Code"   />
+                            <syncfusion:GridTextColumn HeaderText="Descripción" MappingName="Description" AllowEditing="False"/>
+                            <syncfusion:GridTemplateColumn AllowSorting="False" MaximumWidth="100" AllowEditing="False" AllowGrouping="False" AllowFiltering="False" AllowDragging="False" HeaderText=""  MappingName="Id">
+                                <syncfusion:GridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Button Name="BtnRepairRemove" Click="BtnRepairRemove_OnClick"  Margin="10" Content="Eliminar" DataContext="{Binding}" Background="#FFA8CF45" Foreground="#FF5D5D5D"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </syncfusion:GridTemplateColumn.CellTemplate>
+
+                                <syncfusion:GridTemplateColumn.EditTemplate>
+                                    <DataTemplate/>
+                                </syncfusion:GridTemplateColumn.EditTemplate>
+
+                            </syncfusion:GridTemplateColumn>
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+
+
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+        <Button x:Name="BtnClose" Height="29" VerticalAlignment="Top" Margin="0,37,75,0" HorizontalAlignment="Right" Width="105" Click="Button_Click" Style="{DynamicResource ButtonStyle1}">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/Images/Icono Salir Pasivo.png"/>
+            </Button.Background>
+
+        </Button>
+        <Image HorizontalAlignment="Left" Height="67" Margin="61,31,0,0" VerticalAlignment="Top" Width="205" Source="Resources/Images/Logo mas Grande.png"/>
+        <StackPanel  Orientation="Horizontal" Margin="0,135,65,365" HorizontalAlignment="Right" Width="200">
+            <Button Name="BtnGraphic" Content="" Grid.Column="1" Width="35" Height="35"  VerticalAlignment="Top" Click="Button_Click_1"  HorizontalAlignment="Right"  BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle4}" Margin="36,0,0,0" >
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Images/Bar-Chart.png" Stretch="None"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BtnPdf" MouseEnter="BtnPdf_OnMouseEnter"  HorizontalContentAlignment="Right" VerticalContentAlignment="Top" HorizontalAlignment="Right" Width="33" Height="33" VerticalAlignment="Top" Click="BtnPDF_Click" Grid.Column="1" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle2}" Margin="22,0,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Images/PDF.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BtnExcel"  HorizontalContentAlignment="Right" VerticalContentAlignment="Top" HorizontalAlignment="Right" Width="33" Height="33" VerticalAlignment="Top" Click="BtnExcel_Click" Grid.Column="1" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle3}" Margin="26,0,0,0">
+                <Button.Foreground>
+                    <ImageBrush ImageSource="Resources/Images/Microsoft-Excel-2013-02.png" Stretch="None"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Images/exel.png"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
