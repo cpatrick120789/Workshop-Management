@@ -7,6 +7,6 @@
   - Data Grid System. 
   - Option to export excel and pdf.
 
-- Credenciales: 
+- Access credentials: 
   - user: superadmin   
   - pass: superadmin
